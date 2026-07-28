@@ -1,0 +1,3719 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover" name="viewport"/>
+<meta content="Super Wash MTY: lavado y auto detailing premium en Monterrey, Nuevo León. Servicio en sucursal y lavado a domicilio para autos, SUV, pickups y vehículos de gama media-alta." name="description"/>
+<meta content="#0a0a0a" name="theme-color"/>
+<title>Super Wash MTY | Auto Detailing Premium en Monterrey</title>
+<link href="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186033/IMG_9343_rwg0ax_emlmnd.png" rel="icon" type="image/png"/>
+
+
+
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root {
+      --bg: #0a0a0a;
+      --bg-soft: #111111;
+      --panel: #151515;
+      --panel-2: #1a1a1a;
+      --text: #f5f2ec;
+      --muted: #aaa7a1;
+      --line: rgba(255,255,255,.10);
+      --cream: #d9c5a5;
+      --cream-soft: #bca889;
+      --coffee: #8f6b48;
+      --shadow: 0 30px 80px rgba(0,0,0,.35);
+      --radius: 26px;
+      --radius-sm: 16px;
+      --max: 1240px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "DM Sans", sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body.menu-open { overflow: hidden; }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; }
+
+    .container {
+      width: min(calc(100% - 40px), var(--max));
+      margin-inline: auto;
+    }
+
+    .hero-top-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      letter-spacing: .17em;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--cream);
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 34px;
+      height: 1px;
+      background: var(--cream);
+    }
+
+    .hero-rating {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 0;
+      padding: 9px 16px 9px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.06);
+      backdrop-filter: blur(14px) saturate(160%);
+      -webkit-backdrop-filter: blur(14px) saturate(160%);
+      text-decoration: none;
+      transition: background .25s ease, border-color .25s ease, transform .25s ease;
+    }
+    .hero-rating:hover {
+      background: rgba(255,255,255,.11);
+      border-color: rgba(217,197,165,.4);
+      transform: translateY(-1px);
+    }
+    .hero-rating-g { width: 18px; height: 18px; flex-shrink: 0; }
+    .hero-rating-stars { display: inline-flex; gap: 2px; flex-shrink: 0; }
+    .hero-rating-stars svg { width: 13px; height: 13px; fill: #ffb02e; }
+    .hero-rating-score {
+      font-family: "Manrope", sans-serif;
+      font-weight: 800;
+      font-size: .92rem;
+      color: var(--text);
+    }
+    .hero-rating-count {
+      font-size: .78rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    @media (max-width: 560px) {
+      .hero-rating { padding: 7px 12px 7px 9px; gap: 7px; }
+      .hero-rating-count { display: none; }
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { font-family: "Manrope", sans-serif; }
+
+    h1 {
+      font-size: clamp(3rem, 7vw, 7.4rem);
+      line-height: .94;
+      letter-spacing: -.065em;
+      max-width: 1000px;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      font-size: clamp(2.25rem, 4.6vw, 5rem);
+      line-height: 1.02;
+      letter-spacing: -.05em;
+      margin-bottom: 22px;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      line-height: 1.2;
+      letter-spacing: -.02em;
+    }
+
+    .lead {
+      color: #d1cec8;
+      font-size: clamp(1rem, 1.5vw, 1.25rem);
+      max-width: 690px;
+    }
+
+    .muted { color: var(--muted); }
+    .section { padding: 118px 0; }
+    .section-tight { padding: 80px 0; }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 70px;
+      align-items: end;
+      margin-bottom: 55px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      max-width: 560px;
+      margin-bottom: 6px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 24px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: .25s ease;
+      cursor: pointer;
+      gap: 10px;
+    }
+
+    .btn-primary {
+      background: var(--text);
+      color: #080808;
+    }
+
+    .btn-primary:hover {
+      background: var(--cream);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border-color: rgba(255,255,255,.3);
+      color: var(--text);
+      background: rgba(10,10,10,.15);
+      backdrop-filter: blur(12px);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--cream);
+      color: var(--cream);
+      transform: translateY(-2px);
+    }
+
+    .btn-dark {
+      background: #111;
+      color: white;
+    }
+
+    .btn-dark:hover { background: #242424; }
+
+    .topbar {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 1000;
+      transition: transform .35s ease, background .3s ease;
+    }
+
+    .topbar.nav-hidden {
+      transform: translateY(-110%);
+    }
+
+    .topbar.scrolled {
+      background: rgba(8,8,8,.84);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-family: "Manrope", sans-serif;
+      font-weight: 800;
+      letter-spacing: -.04em;
+      font-size: 1.2rem;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.55);
+      font-size: .74rem;
+      letter-spacing: -.08em;
+      background: rgba(255,255,255,.05);
+      overflow: hidden;
+    }
+
+    .brand-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-size: .93rem;
+    }
+
+    .nav-links a:not(.btn) {
+      color: #dedbd5;
+      transition: .2s ease;
+    }
+
+    .nav-links a:not(.btn):hover { color: var(--cream); }
+
+    .menu-toggle {
+      width: 54px;
+      height: 54px;
+      display: none;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: rgba(255,255,255,.05);
+      color: white;
+      cursor: pointer;
+      opacity: 1;
+      padding: 0;
+      transition: opacity .2s ease, visibility .2s ease, border-color .25s ease, background .25s ease;
+    }
+
+    .menu-toggle:hover {
+      border-color: rgba(217,197,165,.5);
+      background: rgba(217,197,165,.1);
+    }
+
+    .menu-toggle-bars {
+      position: relative;
+      width: 22px;
+      height: 16px;
+    }
+
+    .menu-toggle-bars span {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--cream);
+    }
+
+    .menu-toggle-bars span:nth-child(1) { top: 0; }
+    .menu-toggle-bars span:nth-child(2) { top: 7px; width: 70%; transition: width .25s ease; }
+    .menu-toggle-bars span:nth-child(3) { top: 14px; }
+
+    .menu-toggle:hover .menu-toggle-bars span:nth-child(2) { width: 100%; }
+
+    body.menu-open .menu-toggle {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .hero {
+      min-height: 100svh;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      padding: 160px 0 76px;
+      isolation: isolate;
+      overflow: hidden;
+    }
+
+    .hero-video {
+      position: absolute;
+      inset: 0;
+      z-index: -4;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.02);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -3;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,.93) 0%, rgba(0,0,0,.64) 42%, rgba(0,0,0,.24) 74%, rgba(0,0,0,.35) 100%),
+        linear-gradient(0deg, #0a0a0a 0%, transparent 25%);
+      transform: scale(1.02);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 34%;
+      z-index: -2;
+      background: linear-gradient(transparent, #0a0a0a);
+    }
+
+    .hero-content { max-width: 980px; }
+
+    .hero h1 span {
+      display: block;
+      color: var(--cream);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 36px;
+    }
+
+    .hero-meta {
+      margin-top: 56px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      max-width: 900px;
+    }
+
+    .hero-meta-card {
+      position: relative;
+      padding: 22px 20px 20px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: linear-gradient(160deg, rgba(255,255,255,.07), rgba(255,255,255,.015));
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      overflow: hidden;
+      transition: transform .4s cubic-bezier(.19,1,.22,1), border-color .4s ease, box-shadow .4s ease, background .4s ease;
+    }
+
+    .hero-meta-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(120px 80px at 15% 0%, rgba(255,212,0,.16), transparent 70%);
+      opacity: 0;
+      transition: opacity .4s ease;
+      pointer-events: none;
+    }
+
+    .hero-meta-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255,212,0,.4);
+      box-shadow: 0 18px 36px -14px rgba(0,0,0,.55);
+    }
+
+    .hero-meta-card:hover::before { opacity: 1; }
+
+    .hero-meta-num {
+      display: block;
+      font-family: "Manrope", sans-serif;
+      font-weight: 800;
+      font-size: .74rem;
+      letter-spacing: .12em;
+      color: #ffd400;
+      opacity: .85;
+      margin-bottom: 14px;
+    }
+
+    .hero-meta-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: white;
+      font-size: 1rem;
+      letter-spacing: -.01em;
+    }
+
+    .hero-meta-card p {
+      color: #c8c4bd;
+      font-size: .88rem;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .concept-section {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
+    .concept-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(180deg, rgba(10,10,10,.90) 0%, rgba(10,10,10,.94) 100%),
+        url("https://res.cloudinary.com/dgp7uhps3/image/upload/v1785192327/IMG_9370_zg8frr.jpg") center/cover;
+    }
+
+    .bg-overlay-section {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      background: #0d0d0d;
+    }
+    .bg-overlay-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(180deg, rgba(10,10,10,.90) 0%, rgba(10,10,10,.94) 100%),
+        var(--bg-photo) center/cover;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 72px;
+      align-items: start;
+    }
+
+    .intro-copy {
+      padding-top: 12px;
+      position: sticky;
+      top: 130px;
+    }
+
+    .intro-copy p { color: var(--muted); max-width: 490px; }
+
+    .intro-media {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 18px;
+      position: relative;
+    }
+
+    .media-card {
+      min-height: 530px;
+      position: relative;
+    }
+
+    .media-card.small {
+      min-height: 390px;
+      margin-top: 90px;
+    }
+
+    .media-card-frame {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background: #222;
+    }
+
+    .media-card-frame img,
+    .media-card-frame video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .6s ease;
+    }
+
+    .media-card:hover .media-card-frame img,
+    .media-card:hover .media-card-frame video { transform: scale(1.035); }
+
+    .media-label {
+      position: absolute;
+      inset: auto 18px 18px 18px;
+      padding: 14px 16px;
+      background: rgba(10,10,10,.66);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 14px;
+      font-size: .92rem;
+    }
+
+    .services-wrap {
+      background: #0d0d0d;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      grid-column: span 4;
+      min-height: 500px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      isolation: isolate;
+      transition: transform .3s ease, border-color .3s ease;
+    }
+
+    .service-card.large { grid-column: span 6; min-height: 560px; }
+    .service-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(217,197,165,.45);
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(0deg, rgba(0,0,0,.94), rgba(0,0,0,.05) 72%),
+        var(--image) center/cover;
+      transition: transform .7s ease;
+    }
+
+    .service-card:hover::before { transform: scale(1.035); }
+
+    .service-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(120deg, rgba(217,197,165,.07), transparent 38%);
+    }
+
+    .service-content { padding: 28px; width: 100%; }
+    .service-num {
+      font-size: .78rem;
+      color: var(--cream);
+      letter-spacing: .14em;
+      margin-bottom: 12px;
+    }
+
+    .service-content p {
+      color: #c7c4be;
+      font-size: .94rem;
+      max-width: 430px;
+    }
+
+    .service-link {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+      padding: 13px 22px;
+      font-weight: 700;
+      font-size: .88rem;
+      letter-spacing: .02em;
+      color: var(--cream);
+      background: linear-gradient(180deg, rgba(217,197,165,.1), rgba(217,197,165,.03));
+      border: 1px solid rgba(217,197,165,.4);
+      border-radius: 999px;
+      overflow: hidden;
+      isolation: isolate;
+      transition: color .35s ease, border-color .35s ease, transform .3s ease, box-shadow .35s ease;
+    }
+
+    .service-link::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(135deg, var(--cream), var(--cream-soft) 55%, var(--coffee));
+      transform: translateX(-101%);
+      transition: transform .45s cubic-bezier(.65,0,.35,1);
+    }
+
+    .service-link:hover,
+    .service-link:focus-visible {
+      color: #14100a;
+      border-color: var(--cream);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(217,197,165,.22);
+    }
+
+    .service-link:hover::before,
+    .service-link:focus-visible::before { transform: translateX(0); }
+
+    .service-link::after {
+      content: "↗";
+      color: var(--cream);
+      transition: color .35s ease, transform .35s ease;
+    }
+
+    .service-link:hover::after,
+    .service-link:focus-visible::after {
+      color: #14100a;
+      transform: translate(2px, -2px);
+    }
+
+    .experience {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: var(--cream);
+      color: #111;
+      border-radius: 34px;
+      overflow: hidden;
+    }
+
+    .experience-image {
+      position: relative;
+      min-height: 650px;
+      background: #000;
+      overflow: hidden;
+    }
+
+    .experience-image-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .cafe-video-window {
+      position: absolute;
+      right: 22px;
+      bottom: 22px;
+      width: 150px;
+      aspect-ratio: 9 / 16;
+      border-radius: 18px;
+      overflow: hidden;
+      background: #000;
+      border: 3px solid rgba(255,255,255,.9);
+      box-shadow: 0 18px 40px rgba(0,0,0,.4);
+      z-index: 2;
+    }
+
+    .cafe-video-window img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .cafe-video-tag {
+      position: absolute;
+      left: 8px;
+      bottom: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: rgba(10,10,10,.55);
+      backdrop-filter: blur(6px);
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    .cafe-video-tag::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #d9c5a5;
+    }
+
+    @media (max-width: 640px) {
+      .cafe-video-window { width: 108px; right: 14px; bottom: 14px; border-width: 2px; border-radius: 14px; }
+      .cafe-video-tag { font-size: .55rem; padding: 3px 7px; }
+    }
+
+    .experience-copy {
+      padding: clamp(42px, 7vw, 88px);
+      align-self: center;
+    }
+
+    .experience-copy .eyebrow { color: #4e3a28; }
+    .experience-copy .eyebrow::before { background: #4e3a28; }
+    .experience-copy h2 { color: #111; }
+    .experience-copy p { color: #4d463e; max-width: 520px; }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 34px 0;
+      display: grid;
+      gap: 14px;
+    }
+
+    .feature-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(0,0,0,.14);
+    }
+
+    .feature-list li::before {
+      content: "●";
+      color: #4e3a28;
+      font-size: .55rem;
+      margin-top: 7px;
+    }
+
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .course-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 30px;
+      min-height: 380px;
+      display: flex;
+      flex-direction: column;
+      transition: .3s ease;
+    }
+
+    .course-card:hover {
+      background: var(--panel-2);
+      transform: translateY(-4px);
+      border-color: rgba(217,197,165,.4);
+    }
+
+    .course-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      color: var(--cream);
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+
+    .course-card h3 {
+      margin: 65px 0 16px;
+      font-size: 1.65rem;
+    }
+
+    .course-card p { color: var(--muted); }
+
+    .course-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 30px;
+      color: #d5d1ca;
+      font-size: .92rem;
+    }
+
+    .course-card li { margin: 8px 0; }
+    .course-card li::before { content: "— "; color: var(--cream); }
+    .course-card .service-link { margin-top: auto; }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .process-step {
+      padding: 34px 24px 36px;
+      border-right: 1px solid var(--line);
+      min-height: 250px;
+    }
+
+    .process-step:last-child { border-right: 0; }
+    .process-step span { color: var(--cream); font-size: .82rem; }
+    .process-step h3 { margin-top: 48px; }
+    .process-step p { color: var(--muted); font-size: .91rem; }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .location-card {
+      min-height: 510px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      overflow: hidden;
+      background: var(--panel);
+    }
+
+    .location-copy {
+      padding: clamp(36px, 5vw, 70px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .location-copy address {
+      font-style: normal;
+      color: #d8d4cd;
+      margin: 15px 0 30px;
+    }
+
+    .location-map iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 510px;
+      border: 0;
+      filter: grayscale(1) contrast(1.05) invert(.9);
+    }
+
+    .cta-panel {
+      min-height: 560px;
+      padding: clamp(42px, 8vw, 100px);
+      border-radius: 36px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+      isolation: isolate;
+    }
+
+    .cta-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,.88), rgba(0,0,0,.18)),
+        url("https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186486/IMG_9360_wv8t5s.jpg") center/cover;
+    }
+
+    .cta-panel::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(0deg, rgba(0,0,0,.75), transparent);
+    }
+
+    .cta-panel h2 { max-width: 850px; }
+    .cta-panel p { max-width: 640px; color: #d4d0ca; }
+
+    footer {
+      padding: 70px 0 30px;
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr repeat(3, 1fr);
+      gap: 40px;
+    }
+
+    .footer-brand p {
+      color: var(--muted);
+      max-width: 390px;
+      margin-top: 18px;
+    }
+
+    .footer-col h4 { margin: 0 0 18px; }
+    .footer-col a {
+      display: block;
+      color: var(--muted);
+      margin: 10px 0;
+    }
+
+    .footer-col a:hover { color: var(--cream); }
+
+    .footer-bottom {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+      color: #77736d;
+      font-size: .85rem;
+    }
+
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      z-index: 1001;
+      background: var(--bg);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .45s ease, visibility .45s ease;
+    }
+
+    .mobile-menu.open { opacity: 1; visibility: visible; }
+
+    .mobile-menu-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=72') center/cover;
+      opacity: 0;
+      filter: grayscale(.35) contrast(1.05);
+      transition: opacity .8s ease .1s;
+    }
+    .mobile-menu.open .mobile-menu-bg { opacity: .16; }
+    .mobile-menu-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 18% 0%, rgba(217,197,165,.14), transparent 55%),
+        linear-gradient(180deg, rgba(7,7,7,.82) 0%, rgba(7,7,7,.97) 55%, #070707 100%);
+    }
+
+    .mobile-menu-inner {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 22px clamp(20px, 7vw, 40px) 28px;
+      overflow-y: auto;
+    }
+
+    .mobile-menu-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex: 0 0 auto;
+    }
+
+    .mobile-menu-brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--text);
+      font-family: "Manrope", sans-serif;
+      font-weight: 700;
+      font-size: .92rem;
+      letter-spacing: .01em;
+    }
+    .mobile-menu-brand-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      flex: 0 0 auto;
+    }
+    .mobile-menu-brand-mark img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .mobile-menu .close-menu {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      color: var(--text);
+      background: rgba(255,255,255,.03);
+      font-size: 1.25rem;
+      line-height: 1;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      transition: background .25s ease, border-color .25s ease, transform .35s ease;
+    }
+    .mobile-menu .close-menu:hover {
+      background: rgba(217,197,165,.1);
+      border-color: var(--cream-soft);
+      transform: rotate(90deg);
+    }
+
+    .mobile-nav {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0;
+      padding: 18px 0;
+    }
+
+    .mobile-nav a {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      padding: 13px 2px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      font-family: "Manrope", sans-serif;
+      font-weight: 700;
+      font-size: clamp(1.35rem, 6.6vw, 2rem);
+      color: var(--text);
+      position: relative;
+      opacity: 0;
+      transform: translateX(-16px);
+      transition: opacity .5s ease, transform .5s ease, color .2s ease;
+      transition-delay: 0ms;
+    }
+    .mobile-nav a:first-child { border-top: 1px solid rgba(255,255,255,.08); }
+    .mobile-menu.open .mobile-nav a {
+      opacity: 1;
+      transform: none;
+      transition-delay: calc(var(--i, 0) * 55ms + 120ms);
+    }
+    .mobile-nav a:hover,
+    .mobile-nav a:active { color: var(--cream); }
+
+    .mobile-nav-num {
+      font-family: "DM Sans", sans-serif;
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      color: var(--cream-soft);
+      min-width: 24px;
+      transition: color .2s ease;
+    }
+    .mobile-nav a:hover .mobile-nav-num { color: var(--cream); }
+
+    .mobile-nav-label { flex: 1; }
+
+    .mobile-nav-arrow {
+      font-size: 1.1rem;
+      color: var(--cream);
+      opacity: 0;
+      transform: translateX(-8px);
+      transition: opacity .25s ease, transform .25s ease;
+    }
+    .mobile-nav a:hover .mobile-nav-arrow { opacity: 1; transform: none; }
+
+    .mobile-menu-bottom { flex: 0 0 auto; }
+
+    .mobile-menu-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 22px;
+      border-radius: 999px;
+      border: 1px solid var(--cream);
+      color: var(--cream);
+      font-family: "Manrope", sans-serif;
+      font-weight: 700;
+      font-size: .98rem;
+      letter-spacing: .02em;
+      transition: background .25s ease, color .25s ease, opacity .5s ease, transform .5s ease;
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    .mobile-menu.open .mobile-menu-cta { opacity: 1; transform: none; transition-delay: 480ms; }
+    .mobile-menu-cta:hover { background: var(--cream); color: #0a0a0a; }
+
+    .mobile-menu-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      margin-top: 20px;
+      text-align: center;
+      font-size: .82rem;
+      color: var(--muted);
+    }
+    .mobile-menu-info a { color: inherit; transition: color .2s ease; }
+    .mobile-menu-info a:hover { color: var(--cream); }
+
+    .mobile-social {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .mobile-social a {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      display: grid;
+      place-items: center;
+      color: var(--cream);
+      background: rgba(217,197,165,.06);
+      transition: background .2s ease, border-color .2s ease, transform .2s ease;
+    }
+    .mobile-social a svg { width: 22px; height: 22px; fill: currentColor; }
+    .mobile-social a:hover {
+      background: var(--cream);
+      color: #0a0a0a;
+      border-color: var(--cream);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 380px) {
+      .mobile-nav a { font-size: 1.3rem; padding: 11px 2px; }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (max-width: 980px) {
+      .nav-links { display: none; }
+      .menu-toggle { display: grid; }
+      .section-head,
+      .intro-grid,
+      .experience,
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .intro-copy { position: static; }
+      .service-card, .service-card.large { grid-column: span 6; }
+      .courses-grid { grid-template-columns: 1fr; }
+      .process-grid { grid-template-columns: 1fr 1fr; }
+      .process-step:nth-child(2n) { border-right: 0; }
+      .experience-image { min-height: 480px; }
+      .footer-grid { grid-template-columns: 1.3fr 1fr 1fr; }
+      .footer-grid .footer-col:last-child { grid-column: 2 / -1; }
+    }
+
+    @media (max-width: 680px) {
+      .container { width: min(calc(100% - 24px), var(--max)); }
+      .section { padding: 84px 0; }
+      .section-tight { padding: 60px 0; }
+      .nav { min-height: 74px; }
+      .brand span:last-child { display: none; }
+      .hero { min-height: 920px; padding: 130px 0 40px; }
+      .hero::before {
+        background:
+          linear-gradient(0deg, rgba(0,0,0,.95) 0%, rgba(0,0,0,.48) 68%, rgba(0,0,0,.25) 100%);
+      }
+
+      .hero h1 { font-size: clamp(3.2rem, 16vw, 5rem); }
+      .hero-meta { grid-template-columns: 1fr; gap: 12px; margin-top: 40px; }
+      .hero-meta-card { padding: 18px 18px 16px; }
+      .hero-actions .btn { width: 100%; }
+      .section-head { gap: 20px; }
+      .intro-media { grid-template-columns: 1fr; gap: 0; padding: 14px 0 56px; position: relative; }
+      .media-card, .media-card.small { min-height: 340px; margin-top: 0; }
+      .media-card {
+        width: 84%;
+        margin: 0 auto 0 0;
+        position: relative;
+        z-index: 1;
+      }
+      .media-card.small {
+        width: 54%;
+        min-height: 210px;
+        position: absolute;
+        top: -20px;
+        right: 2%;
+        margin: 0;
+        z-index: 3;
+      }
+      .media-card .media-card-frame { transform: rotate(-4deg); }
+      .media-card.small .media-card-frame {
+        transform: rotate(7deg);
+        border: 5px solid #0b0b0b;
+        box-shadow: 0 18px 40px rgba(0,0,0,.55);
+      }
+      .media-card:hover .media-card-frame img,
+      .media-card:hover .media-card-frame video,
+      .media-card.small:hover .media-card-frame img,
+      .media-card.small:hover .media-card-frame video { transform: none; }
+      .service-card, .service-card.large { grid-column: span 12; min-height: 500px; }
+      .process-grid { grid-template-columns: 1fr; }
+      .process-step { border-right: 0; border-bottom: 1px solid var(--line); min-height: 210px; }
+      .process-step:last-child { border-bottom: 0; }
+      .experience-image { min-height: 390px; }
+      .location-card, .location-map iframe { min-height: 420px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-grid .footer-col:last-child { grid-column: auto; }
+      .footer-bottom { flex-direction: column; }
+      .cta-panel { min-height: 660px; padding: 30px; }
+    }
+  
+    /* Catálogo real de servicios */
+    .catalog-nav {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: -18px 0 38px;
+    }
+    .catalog-nav a {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 10px 16px;
+      color: #d7d3cc;
+      font-size: .88rem;
+      transition: .2s ease;
+    }
+    .catalog-nav a:hover { border-color: var(--cream); color: var(--cream); }
+    .catalog-group { scroll-margin-top: 115px; margin-top: 72px; }
+    .catalog-group:first-of-type { margin-top: 0; }
+    .catalog-group-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      align-items: end;
+      margin-bottom: 24px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    .catalog-group-head h3 { font-size: clamp(1.8rem, 3vw, 3rem); margin: 0; }
+    .catalog-group-head span {
+      color: var(--cream);
+      text-transform: uppercase;
+      letter-spacing: .15em;
+      font-size: .75rem;
+    }
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+    }
+    .catalog-card {
+      grid-column: span 6;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(145deg, rgba(255,255,255,.035), rgba(255,255,255,.012));
+      overflow: hidden;
+      transition: transform .3s ease, border-color .3s ease;
+    }
+    .catalog-card:hover { transform: translateY(-4px); border-color: rgba(217,197,165,.38); }
+    .catalog-card.featured { grid-column: span 12; }
+    .catalog-card-top {
+      min-height: 245px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      position: relative;
+      isolation: isolate;
+      background:
+        linear-gradient(0deg, rgba(0,0,0,.93), rgba(0,0,0,.20)),
+        var(--image) center/cover;
+    }
+    .catalog-card-top::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(110deg, rgba(217,197,165,.10), transparent 45%);
+    }
+    .catalog-kicker {
+      color: var(--cream);
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      font-size: .73rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .catalog-card-top h4 {
+      font-family: "Manrope", sans-serif;
+      font-size: clamp(1.55rem, 2.4vw, 2.35rem);
+      line-height: 1.05;
+      letter-spacing: -.04em;
+      margin: 0 0 12px;
+    }
+    .catalog-card-top p { color: #d1cdc6; margin: 0; max-width: 720px; }
+    .catalog-body { padding: 26px 28px 28px; }
+    .catalog-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-bottom: 20px;
+    }
+    .catalog-chip {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 11px;
+      color: #c8c4bd;
+      font-size: .78rem;
+    }
+    .size-guide {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 24px 22px 22px;
+      margin-bottom: 32px;
+    }
+    .size-guide-head { margin-bottom: 18px; }
+    .size-guide-head h3 {
+      font-family: "Manrope", sans-serif;
+      font-size: 1.15rem;
+      margin: 2px 0 4px;
+    }
+    .size-guide-head p { color: var(--muted); font-size: .88rem; margin: 0; }
+    .size-guide-selected { display: inline-block; color: var(--cream); font-weight: 700; }
+    .size-guide-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .size-card {
+      position: relative;
+      aspect-ratio: 3 / 4;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      cursor: pointer;
+      font-family: inherit;
+      color: inherit;
+      padding: 0;
+      background: var(--panel-2) center/cover no-repeat;
+      isolation: isolate;
+      transition: border-color .2s ease, transform .2s ease;
+    }
+    .size-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0) 32%, rgba(0,0,0,.55) 68%, rgba(0,0,0,.92) 100%);
+      z-index: 1;
+      transition: background .2s ease;
+    }
+    .size-card:hover { border-color: var(--cream-soft); }
+    .size-card:hover::before { background: linear-gradient(180deg, rgba(0,0,0,.05) 30%, rgba(0,0,0,.6) 68%, rgba(0,0,0,.94) 100%); }
+    .size-card.selected {
+      border-color: var(--cream);
+      transform: translateY(-3px);
+      box-shadow: 0 14px 34px rgba(0,0,0,.4);
+    }
+    .size-card.selected::before { background: linear-gradient(180deg, rgba(217,197,165,.18) 0%, rgba(0,0,0,.55) 55%, rgba(0,0,0,.92) 100%); }
+    .size-card.selected .size-badge { background: var(--cream); }
+    .size-card-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      height: 100%;
+      padding: 14px 10px 16px;
+      text-align: center;
+    }
+    .size-badge {
+      display: inline-block;
+      background: var(--coffee);
+      color: var(--bg);
+      font-family: "Manrope", sans-serif;
+      font-weight: 800;
+      font-size: .78rem;
+      letter-spacing: .04em;
+      border-radius: 999px;
+      padding: 5px 14px;
+      margin-bottom: 8px;
+      transition: background .2s ease;
+    }
+    .size-card-desc {
+      margin: 0;
+      color: #e8e5df;
+      font-size: .78rem;
+      line-height: 1.4;
+    }
+    @media (max-width: 700px) {
+      .size-guide-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    .price-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 17px 0 20px;
+      font-size: .9rem;
+    }
+    .price-table th, .price-table td {
+      text-align: left;
+      padding: 11px 8px;
+      border-bottom: 1px solid var(--line);
+    }
+    .price-table th { color: var(--muted); font-weight: 500; }
+    .price-table td:last-child { color: var(--cream); font-weight: 700; text-align: right; }
+    .catalog-details {
+      border-top: 1px solid var(--line);
+      margin-top: 6px;
+      padding-top: 16px;
+    }
+    .catalog-details summary {
+      cursor: pointer;
+      font-weight: 700;
+      color: #ece8e1;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .catalog-details summary::-webkit-details-marker { display:none; }
+    .catalog-details summary::after { content: "+"; color: var(--cream); }
+    .catalog-details[open] summary::after { content: "−"; }
+    .catalog-detail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding-top: 20px;
+    }
+    .catalog-detail-grid h5 {
+      margin: 0 0 10px;
+      color: var(--cream);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: .72rem;
+    }
+    .catalog-detail-grid ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: .9rem; }
+    .catalog-detail-grid li { margin: 6px 0; }
+    .catalog-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 22px; }
+    .catalog-note { color: var(--muted); font-size: .82rem; margin-top: 12px; }
+    @media (max-width: 800px) {
+      .catalog-card, .catalog-card.featured { grid-column: span 12; }
+      .catalog-detail-grid { grid-template-columns: 1fr; }
+      .catalog-group-head { align-items: start; flex-direction: column; gap: 5px; }
+    }
+
+    .services-modal{position:fixed;inset:0;z-index:3000;opacity:0;visibility:hidden;transition:.28s ease}
+    .services-modal.open{opacity:1;visibility:visible}
+    .services-modal-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.78);backdrop-filter:blur(10px)}
+    .services-modal-panel{position:absolute;inset:22px;background:#0b0b0b;border:1px solid var(--line);border-radius:30px;overflow:hidden;box-shadow:0 40px 120px rgba(0,0,0,.6);display:flex;flex-direction:column;transform:translateY(18px) scale(.985);transition:.28s ease}
+    .services-modal.open .services-modal-panel{transform:none}
+    .services-modal-header{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;padding:28px 34px 20px;border-bottom:1px solid var(--line);background:rgba(10,10,10,.96);transition:padding .28s ease}
+    .services-modal-header h2{font-size:clamp(2rem,4vw,4rem);margin-bottom:0}
+    .services-modal-header .eyebrow{margin-bottom:10px}
+    .services-modal-header-text{overflow:hidden;transition:max-height .28s ease, opacity .22s ease, margin .28s ease;max-height:220px;opacity:1}
+    .services-modal-header.is-collapsed{padding-top:14px;padding-bottom:14px;border-bottom-color:transparent}
+    .services-modal-header.is-collapsed .services-modal-header-text{max-height:0;opacity:0;margin:0}
+    .services-modal-close{width:52px;height:52px;border-radius:50%;border:1px solid var(--line);background:#151515;color:#fff;font-size:1.7rem;cursor:pointer;flex:0 0 auto;position:relative;z-index:7;pointer-events:auto}
+    .services-modal-close:hover{border-color:var(--cream);color:var(--cream)}
+    .services-modal-content{overflow-y:auto;overscroll-behavior:contain;padding:34px 0 80px}
+    .modal-catalog-container{width:min(calc(100% - 40px),var(--max))}
+    .services-modal .catalog-nav{
+      position:static;
+      padding:0;
+      margin:0 0 34px;
+      background:transparent;
+      backdrop-filter:none;
+    }
+
+    .services-modal .catalog-nav a{
+      background:#121212;
+      border-color:rgba(255,255,255,.12);
+    }
+
+    .services-modal .catalog-nav a:hover{
+      background:#1a1a1a;
+      border-color:var(--cream);
+    }
+
+    .services-modal .catalog-group{
+      scroll-margin-top:24px;
+      margin-top:64px;
+    }
+
+    .services-modal .catalog-group:first-of-type{
+      margin-top:0;
+    }
+
+    .services-modal .catalog-group-head{
+      position:static;
+      background:transparent;
+      padding-top:0;
+    }
+
+    .services-modal-content{
+      scrollbar-width:thin;
+      scrollbar-color:rgba(217,197,165,.45) transparent;
+    }
+
+    .services-modal-content::-webkit-scrollbar{
+      width:9px;
+    }
+
+    .services-modal-content::-webkit-scrollbar-track{
+      background:transparent;
+    }
+
+    .services-modal-content::-webkit-scrollbar-thumb{
+      background:rgba(217,197,165,.35);
+      border-radius:999px;
+      border:2px solid transparent;
+      background-clip:padding-box;
+    }
+    @media(max-width:680px){
+      .services-modal-panel{inset:0;border-radius:0;border:0}
+      .services-modal-header{padding:20px 18px 15px}
+      .services-modal-close{width:46px;height:46px}
+      .services-modal-content{padding-top:20px}
+      .modal-catalog-container{width:min(calc(100% - 24px),var(--max))}
+    }
+
+    /* Los elementos del catálogo dentro del modal deben mostrarse siempre */
+    .services-modal .reveal {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+
+    @media(max-width:680px){
+      .services-modal .catalog-nav{
+        display:grid;
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:8px;
+        margin-bottom:28px;
+      }
+
+      .services-modal .catalog-nav a{
+        text-align:center;
+        padding:10px 8px;
+        font-size:.78rem;
+      }
+
+      .services-modal .catalog-group{
+        margin-top:48px;
+      }
+
+      .services-modal .catalog-group-head{
+        margin-bottom:18px;
+      }
+
+      .services-modal .catalog-card-top{
+        min-height:210px;
+      }
+
+      .services-modal .catalog-body{
+        padding:22px 20px 24px;
+      }
+    }
+
+    /* Selector de variante y CTA inteligente */
+    .service-booking-box{
+      margin-top:22px;
+      padding:18px;
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:18px;
+      background:rgba(255,255,255,.035);
+    }
+
+    .service-booking-label{
+      display:block;
+      margin-bottom:9px;
+      color:#f4f0e9;
+      font-size:.82rem;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+
+    .service-booking-select{
+      width:100%;
+      min-height:52px;
+      padding:0 44px 0 15px;
+      border:1px solid rgba(255,255,255,.16);
+      border-radius:13px;
+      background:#111;
+      color:#fff;
+      font:inherit;
+      font-size:16px!important;
+      cursor:pointer;
+      appearance:none;
+      -webkit-appearance:none;
+      background-image:
+        linear-gradient(45deg,transparent 50%,#d9c5a5 50%),
+        linear-gradient(135deg,#d9c5a5 50%,transparent 50%);
+      background-position:
+        calc(100% - 19px) 22px,
+        calc(100% - 13px) 22px;
+      background-size:6px 6px,6px 6px;
+      background-repeat:no-repeat;
+    }
+
+    .service-booking-select:focus{
+      outline:none;
+      border-color:var(--cream);
+      box-shadow:0 0 0 3px rgba(217,197,165,.13);
+    }
+
+    .service-selected-price{
+      min-height:22px;
+      margin:10px 2px 0;
+      color:var(--cream);
+      font-size:.92rem;
+      font-weight:700;
+    }
+
+    .service-booking-box .catalog-actions{
+      margin-top:14px;
+    }
+
+    .service-booking-box .btn{
+      width:100%;
+      justify-content:center;
+    }
+
+    /* Optimización general mobile */
+    @media(max-width:768px){
+      html{scroll-behavior:smooth}
+      body{overflow-x:hidden}
+
+      .container{
+        width:min(calc(100% - 28px),var(--max));
+      }
+
+      .hero{
+        min-height:100svh;
+        padding-top:88px;
+      }
+
+      .hero-content{
+        padding:54px 0 42px;
+      }
+
+      .hero h1{
+        font-size:clamp(2.55rem,12vw,4.5rem);
+        line-height:.94;
+        letter-spacing:-.055em;
+      }
+
+      .hero-copy{
+        font-size:1rem;
+        max-width:34rem;
+      }
+
+      .hero-actions{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:10px;
+        width:100%;
+      }
+
+      .hero-actions .btn{
+        width:100%;
+        min-height:52px;
+        justify-content:center;
+      }
+
+      .section{
+        padding:72px 0;
+      }
+
+      .section-head{
+        gap:15px;
+        margin-bottom:30px;
+      }
+
+      .section-head h2{
+        font-size:clamp(2rem,10vw,3rem);
+      }
+
+      .services-grid{
+        grid-template-columns:1fr;
+        gap:14px;
+      }
+
+      .service-card{
+        min-height:340px;
+      }
+
+      .service-content{
+        padding:24px 20px;
+      }
+
+      .services-modal-header{
+        position:relative;
+        z-index:5;
+        padding:16px 14px 14px;
+      }
+
+      .services-modal-header h2{
+        font-size:clamp(1.65rem,8vw,2.5rem);
+        line-height:1;
+      }
+
+      .services-modal-header .eyebrow{
+        font-size:.7rem;
+        margin-bottom:7px;
+      }
+
+      .services-modal-close{
+        width:42px;
+        height:42px;
+        font-size:1.35rem;
+      }
+
+      .services-modal-content{
+        padding:18px 0 60px;
+      }
+
+      .services-modal .section-head{
+        display:none;
+      }
+
+      .services-modal .catalog-nav{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        margin-bottom:34px;
+      }
+
+      .services-modal .catalog-nav a{
+        min-height:42px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        line-height:1.15;
+      }
+
+      .catalog-grid{
+        gap:16px;
+      }
+
+      .catalog-card,
+      .catalog-card.featured{
+        border-radius:20px;
+        overflow:hidden;
+      }
+
+      .services-modal .catalog-card-top{
+        min-height:190px;
+        padding:24px 20px 20px;
+      }
+
+      .catalog-card-top h4{
+        font-size:clamp(1.45rem,7vw,2rem);
+        line-height:1.05;
+      }
+
+      .catalog-card-top p{
+        font-size:.92rem;
+        line-height:1.5;
+      }
+
+      .services-modal .catalog-body{
+        padding:19px 16px 20px;
+      }
+
+      .catalog-meta{
+        gap:7px;
+      }
+
+      .catalog-chip{
+        font-size:.72rem;
+        padding:7px 9px;
+      }
+
+      .price-table{
+        display:none;
+      }
+
+      .catalog-details{
+        margin-top:16px;
+      }
+
+      .catalog-details summary{
+        min-height:48px;
+        display:flex;
+        align-items:center;
+      }
+
+      .catalog-detail-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+      }
+
+      .service-booking-box{
+        margin-top:17px;
+        padding:14px;
+        border-radius:15px;
+      }
+
+      .service-booking-select{
+        min-height:50px;
+        font-size:16px;
+      }
+
+      .service-booking-box .btn{
+        min-height:52px;
+      }
+    }
+
+    @media(max-width:390px){
+      .container{
+        width:min(calc(100% - 20px),var(--max));
+      }
+
+      .services-modal .catalog-nav{
+        grid-template-columns:1fr;
+      }
+
+      .hero h1{
+        font-size:2.55rem;
+      }
+
+      .services-modal-header{
+        padding-inline:10px;
+      }
+
+      .modal-catalog-container{
+        width:calc(100% - 16px);
+      }
+    }
+
+    /* ===== AI CHAT WIDGET ===== */
+    .ai-chat-fab {
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      z-index: 9999;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      box-shadow: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      transition: transform .25s ease;
+    }
+    .ai-chat-fab:hover { transform: scale(1.06); }
+    .ai-chat-fab-avatar {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.14);
+      background: var(--bg);
+      box-shadow: 0 18px 40px rgba(0,0,0,.45);
+      transition: box-shadow .25s ease;
+    }
+    .ai-chat-fab:hover .ai-chat-fab-avatar { box-shadow: 0 22px 50px rgba(0,0,0,.55); }
+    .ai-chat-fab img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+    }
+    .ai-chat-fab-ring {
+      position: absolute;
+      inset: -6px;
+      border-radius: 50%;
+      border: 1.5px solid var(--cream);
+      opacity: .5;
+      animation: aiFabPulse 2.6s ease-out infinite;
+      pointer-events: none;
+    }
+    @keyframes aiFabPulse {
+      0% { transform: scale(.92); opacity: .55; }
+      100% { transform: scale(1.4); opacity: 0; }
+    }
+    .ai-chat-fab-dot {
+      position: absolute;
+      top: -3px;
+      right: -3px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #5fd97a;
+      border: 2.5px solid #0a0a0a;
+      z-index: 2;
+    }
+    .ai-chat-fab.hidden-fab { transform: scale(0); opacity: 0; pointer-events: none; }
+
+    .ai-chat-tooltip {
+      position: fixed;
+      bottom: 96px;
+      right: 18px;
+      max-width: 232px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px 32px 14px 16px;
+      box-shadow: 0 20px 50px rgba(0,0,0,.5);
+      font-family: "DM Sans", sans-serif;
+      font-size: .86rem;
+      line-height: 1.4;
+      color: var(--text);
+      z-index: 9998;
+      opacity: 0;
+      transform: translateY(10px) scale(.96);
+      pointer-events: none;
+      transition: opacity .4s ease, transform .4s ease;
+    }
+    .ai-chat-tooltip.show { opacity: 1; transform: none; pointer-events: auto; }
+    .ai-chat-tooltip.hidden-fab { opacity: 0; transform: translateY(10px) scale(.96); pointer-events: none; }
+    .ai-chat-tooltip::after {
+      content: '';
+      position: absolute;
+      bottom: -7px;
+      right: 26px;
+      width: 14px;
+      height: 14px;
+      background: var(--panel);
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      transform: rotate(45deg);
+    }
+    .ai-chat-tooltip p { margin: 0; padding-right: 2px; }
+    .ai-chat-tooltip-close {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 1rem;
+      line-height: 1;
+      display: grid;
+      place-items: center;
+      transition: color .2s ease, background .2s ease;
+    }
+    .ai-chat-tooltip-close:hover { color: #fff; background: rgba(255,255,255,.08); }
+
+    @media (max-width: 480px) {
+      .ai-chat-tooltip { right: 14px; bottom: 90px; max-width: min(70vw, 232px); }
+    }
+
+    .ai-chat-window {
+      position: fixed;
+      bottom: 96px;
+      right: 22px;
+      width: 380px;
+      max-width: calc(100vw - 28px);
+      height: 66vh;
+      max-height: 600px;
+      min-height: 420px;
+      background: rgba(17,17,17,.86);
+      backdrop-filter: blur(22px) saturate(160%);
+      -webkit-backdrop-filter: blur(22px) saturate(160%);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      z-index: 9998;
+      opacity: 0;
+      transform: translateY(18px) scale(.97);
+      pointer-events: none;
+      transition: opacity .28s ease, transform .28s ease;
+    }
+    .ai-chat-window.open { opacity: 1; transform: translateY(0) scale(1); pointer-events: auto; }
+
+    .ai-chat-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 16px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,.02);
+      flex-shrink: 0;
+    }
+    .ai-chat-header img {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid var(--line);
+      background: #0a0a0a;
+    }
+    .ai-chat-header-info { line-height: 1.25; }
+    .ai-chat-header-info strong { display: block; font-size: .92rem; font-family:"Manrope",sans-serif; }
+    .ai-chat-header-info span {
+      font-size: .72rem;
+      color: var(--muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .ai-chat-header-info span::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #5fd97a;
+      display: inline-block;
+    }
+    .ai-chat-close {
+      margin-left: auto;
+      background: none;
+      border: none;
+      color: var(--muted);
+      font-size: 1.3rem;
+      line-height: 1;
+      cursor: pointer;
+      padding: 4px 8px;
+    }
+    .ai-chat-close:hover { color: var(--text); }
+
+    .ai-chat-messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .ai-msg {
+      max-width: 84%;
+      padding: 10px 13px;
+      border-radius: 15px;
+      font-size: .87rem;
+      line-height: 1.5;
+      white-space: pre-line;
+    }
+    .ai-msg.bot {
+      align-self: flex-start;
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+      border-bottom-left-radius: 4px;
+      color: var(--text);
+    }
+    .ai-msg.user {
+      align-self: flex-end;
+      background: linear-gradient(135deg, var(--cream), var(--cream-soft));
+      color: #1c1508;
+      border-bottom-right-radius: 4px;
+      font-weight: 500;
+    }
+    .ai-msg.typing { display: flex; align-items: center; gap: 4px; padding: 13px 15px; }
+    .ai-msg.typing span {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--muted);
+      animation: aiTypingBounce 1.1s infinite ease-in-out;
+    }
+    .ai-msg.typing span:nth-child(2) { animation-delay: .15s; }
+    .ai-msg.typing span:nth-child(3) { animation-delay: .3s; }
+    @keyframes aiTypingBounce {
+      0%, 60%, 100% { transform: translateY(0); opacity: .5; }
+      30% { transform: translateY(-4px); opacity: 1; }
+    }
+
+    .ai-chat-wa-cta {
+      align-self: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      text-align: center;
+      padding: 16px 14px;
+      background: rgba(37,211,102,.08);
+      border: 1px solid rgba(37,211,102,.35);
+      border-radius: 16px;
+    }
+    .ai-chat-wa-cta p { margin: 0; font-size: .82rem; color: var(--muted); }
+    .ai-chat-wa-cta a {
+      background: #25D366;
+      color: #06210f;
+      font-weight: 700;
+      font-size: .88rem;
+      padding: 11px 20px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 10px 24px rgba(37,211,102,.25);
+    }
+
+    .ai-chat-input-row {
+      display: flex;
+      gap: 8px;
+      padding: 12px;
+      border-top: 1px solid var(--line);
+      flex-shrink: 0;
+      background: rgba(0,0,0,.15);
+    }
+    .ai-chat-input-row input {
+      flex: 1;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 11px 13px;
+      color: var(--text);
+      font-size: 16px !important;
+      outline: none;
+    }
+    .ai-chat-input-row input:focus { border-color: var(--cream-soft); }
+    .ai-chat-input-row button {
+      background: var(--cream);
+      border: none;
+      border-radius: 12px;
+      width: 44px;
+      flex-shrink: 0;
+      color: #1c1508;
+      cursor: pointer;
+      font-size: 1.05rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform .15s ease;
+    }
+    .ai-chat-input-row button:hover { transform: scale(1.05); }
+    .ai-chat-input-row button:disabled { opacity: .5; cursor: default; transform: none; }
+
+    /* ===== CHAT: experiencia mobile tipo app (pantalla completa, sin zoom, con safe-area) ===== */
+    @media (max-width: 680px) {
+      .ai-chat-window {
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        max-width: 100%;
+        height: 100vh;
+        height: 100dvh;
+        max-height: 100vh;
+        max-height: 100dvh;
+        min-height: 100vh;
+        min-height: 100dvh;
+        border-radius: 0;
+        border: none;
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+      .ai-chat-header { padding: 14px 16px; }
+      .ai-chat-input-row { padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); }
+      .ai-chat-fab {
+        right: 16px;
+        bottom: calc(16px + env(safe-area-inset-bottom));
+      }
+      .ai-chat-tooltip { bottom: calc(90px + env(safe-area-inset-bottom)); }
+    }
+
+    /* ===== GALERÍA ===== */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 190px;
+      grid-auto-flow: dense;
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .gallery-card {
+      position: relative;
+      grid-column: span 2;
+      grid-row: span 1;
+      border-radius: 20px;
+      overflow: hidden;
+      cursor: pointer;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      transform: translateY(0);
+      transition: transform .45s cubic-bezier(.16,1,.3,1), box-shadow .45s ease, border-color .45s ease;
+    }
+    .gallery-card:nth-child(4n+1) { grid-row: span 2; }
+    .gallery-card:nth-child(7n+3) { grid-column: span 2; grid-row: span 2; }
+
+    .gallery-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform: scale(1.04);
+      filter: saturate(.96) brightness(.94);
+      transition: transform .8s cubic-bezier(.16,1,.3,1), filter .5s ease;
+    }
+    .gallery-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(0,0,0,.62) 0%, rgba(0,0,0,0) 42%);
+      opacity: .7;
+      transition: opacity .4s ease;
+    }
+    .gallery-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 26px 50px rgba(0,0,0,.45);
+      border-color: rgba(217,197,165,.45);
+    }
+    .gallery-card:hover img {
+      transform: scale(1.12);
+      filter: saturate(1.05) brightness(1);
+    }
+    .gallery-card:hover::after { opacity: .35; }
+
+    .gallery-card-tag {
+      position: absolute;
+      left: 16px;
+      bottom: 14px;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: "Manrope", sans-serif;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--cream);
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity .4s ease, transform .4s ease;
+    }
+    .gallery-card-tag::before {
+      content: "";
+      width: 16px;
+      height: 1px;
+      background: var(--cream);
+    }
+    .gallery-card:hover .gallery-card-tag { opacity: 1; transform: translateY(0); }
+
+    .gallery-expand {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      z-index: 2;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(10,10,10,.45);
+      border: 1px solid rgba(255,255,255,.22);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      opacity: 0;
+      transform: scale(.85);
+      transition: opacity .35s ease, transform .35s ease;
+    }
+    .gallery-card:hover .gallery-expand { opacity: 1; transform: scale(1); }
+    .gallery-expand svg { width: 15px; height: 15px; stroke: var(--text); }
+
+    @media (max-width: 900px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 148px;
+        gap: 12px;
+      }
+      .gallery-card,
+      .gallery-card:nth-child(4n+1),
+      .gallery-card:nth-child(7n+3) {
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+      /* Patrón tipo mosaico: cards altas y una destacada a todo el ancho cada tanto */
+      .gallery-card:nth-child(6n+1) { grid-column: span 2; grid-row: span 2; }
+      .gallery-card:nth-child(3n+2) { grid-row: span 2; }
+
+      .gallery-card-tag,
+      .gallery-expand {
+        opacity: 1;
+        transform: none;
+      }
+      .gallery-card::after {
+        background: linear-gradient(0deg, rgba(0,0,0,.68) 0%, rgba(0,0,0,0) 55%);
+        opacity: .85;
+      }
+    }
+    @media (max-width: 480px) {
+      .gallery-grid {
+        grid-auto-rows: 128px;
+        gap: 10px;
+      }
+      .gallery-card-tag { font-size: .64rem; left: 12px; bottom: 10px; }
+      .gallery-expand { width: 28px; height: 28px; top: 8px; right: 8px; }
+      .gallery-expand svg { width: 13px; height: 13px; }
+    }
+
+    .gallery-lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(6,6,6,.94);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .3s ease, visibility .3s ease;
+      padding: 24px;
+    }
+    .gallery-lightbox.open { opacity: 1; visibility: visible; }
+    .gallery-lightbox figure {
+      margin: 0;
+      max-width: min(1100px, 92vw);
+      max-height: 86vh;
+      position: relative;
+    }
+    .gallery-lightbox img {
+      max-width: 100%;
+      max-height: 86vh;
+      display: block;
+      border-radius: 16px;
+      box-shadow: 0 40px 90px rgba(0,0,0,.6);
+      opacity: 0;
+      transform: scale(.97);
+      transition: opacity .35s ease, transform .35s ease;
+    }
+    .gallery-lightbox.open img { opacity: 1; transform: scale(1); }
+    .gallery-lightbox-close,
+    .gallery-lightbox-nav {
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.2);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.3rem;
+      transition: background .2s ease, border-color .2s ease;
+    }
+    .gallery-lightbox-close:hover,
+    .gallery-lightbox-nav:hover { background: rgba(255,255,255,.14); border-color: var(--cream-soft); }
+    .gallery-lightbox-close { top: 22px; right: 22px; }
+    .gallery-lightbox-prev { left: 22px; top: 50%; transform: translateY(-50%); }
+    .gallery-lightbox-next { right: 22px; top: 50%; transform: translateY(-50%); }
+    @media (max-width: 640px) {
+      .gallery-lightbox-prev, .gallery-lightbox-next { width: 42px; height: 42px; }
+      .gallery-lightbox-close { width: 42px; height: 42px; top: 14px; right: 14px; }
+      .gallery-lightbox-prev { left: 10px; }
+      .gallery-lightbox-next { right: 10px; }
+    }
+    /* ---------- Modal "Quiénes somos" ---------- */
+    .about-modal-cover{
+      position:relative;
+      width:100%;
+      height:clamp(220px,38vw,420px);
+      overflow:hidden;
+      border-bottom:1px solid var(--line);
+    }
+    .about-modal-cover img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .about-modal-cover::after{
+      content:'';
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg, rgba(0,0,0,.05) 0%, rgba(11,11,11,.92) 96%);
+    }
+    .about-modal-cover-text{
+      position:absolute;
+      left:0; right:0; bottom:0;
+      padding:26px clamp(20px,4vw,40px) 24px;
+      z-index:2;
+    }
+    .about-modal-cover-text .eyebrow{ margin-bottom:8px; }
+    .about-modal-cover-text h3{
+      font-size:clamp(1.5rem,3.2vw,2.4rem);
+      margin:0;
+      color:#fff;
+    }
+    .about-modal-body{
+      width:min(calc(100% - 40px),var(--max));
+      margin:0 auto;
+      padding:38px 0 10px;
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:44px;
+      align-items:start;
+    }
+    .about-modal-copy .eyebrow{ margin-bottom:10px; }
+    .about-modal-copy h2{
+      font-size:clamp(1.7rem,3vw,2.5rem);
+      margin-bottom:16px;
+    }
+    .about-modal-copy p{
+      color:var(--cream-soft);
+      line-height:1.65;
+      margin-bottom:16px;
+    }
+    .about-modal-copy p:last-child{ margin-bottom:0; }
+    .about-modal-photo{
+      position:relative;
+      border-radius:20px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      aspect-ratio:4/5;
+    }
+    .about-modal-photo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .about-modal-photo-caption{
+      position:absolute;
+      left:0; right:0; bottom:0;
+      padding:16px 18px;
+      background:linear-gradient(180deg, transparent, rgba(0,0,0,.82));
+      font-size:.82rem;
+      letter-spacing:.02em;
+      color:var(--cream);
+    }
+    .about-modal-blocks{
+      width:min(calc(100% - 40px),var(--max));
+      margin:38px auto 20px;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:24px;
+    }
+    .about-modal-block{
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:24px 22px;
+      background:rgba(255,255,255,.02);
+    }
+    .about-modal-block h4{
+      font-size:1.05rem;
+      color:var(--cream);
+      margin-bottom:10px;
+    }
+    .about-modal-block p{
+      color:var(--cream-soft);
+      font-size:.92rem;
+      line-height:1.6;
+      margin:0;
+    }
+    @media (max-width: 860px) {
+      .about-modal-body{
+        grid-template-columns:1fr;
+        gap:28px;
+        padding:28px 0 6px;
+      }
+      .about-modal-photo{
+        aspect-ratio:16/10;
+        max-width:420px;
+      }
+      .about-modal-blocks{
+        grid-template-columns:1fr;
+        margin:24px auto 16px;
+      }
+    }
+
+/* Identidad sin archivos locales: reemplaza SW por tu logo Cloudinary cuando lo tengas */
+.brand-mark,.mobile-menu-brand-mark{display:grid;place-items:center;background:#0d0d0d;border-color:rgba(255,212,0,.45)}
+.sw-initials,.sw-chat-avatar{display:grid;place-items:center;width:100%;height:100%;font-family:"Manrope",sans-serif;font-weight:800;letter-spacing:-.08em;color:#ffd400;background:linear-gradient(145deg,#171717,#050505)}
+.sw-chat-avatar{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);font-size:.72rem;flex:0 0 auto}
+.price-list-premium{display:none!important}
+.price-catalog{display:grid;gap:24px}.price-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.012))}
+.premium-price-table{width:100%;min-width:820px;border-collapse:collapse}.premium-price-table th,.premium-price-table td{padding:18px 20px;text-align:left;border-bottom:1px solid var(--line)}.premium-price-table th{color:#ffd400;text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;background:rgba(255,212,0,.045)}.premium-price-table td{color:#e8e5df}.premium-price-table tbody tr:last-child td{border-bottom:0}.premium-price-table tbody tr:hover{background:rgba(255,212,0,.035)}.premium-price-table td:not(:first-child){font-weight:700}.premium-price-table td small{display:block;color:var(--muted);font-size:.72rem;margin-top:3px}.premium-price-table a{display:inline-flex;padding:9px 14px;border:1px solid rgba(255,212,0,.45);border-radius:999px;color:#ffd400;font-size:.8rem;white-space:nowrap}.premium-price-table a:hover{background:#ffd400;color:#090909}
+.extras-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.extra-price-card{padding:24px;border:1px solid var(--line);border-radius:22px;background:var(--panel);display:flex;flex-direction:column;min-height:230px}.extra-price-card>span{color:#ffd400;text-transform:uppercase;letter-spacing:.12em;font-size:.7rem;font-weight:700}.extra-price-card h3{margin:36px 0 8px}.extra-price-card strong{font-size:1.55rem;color:#ffd400}.extra-price-card p{color:var(--muted);font-size:.88rem;margin-top:10px}.extra-price-card.accent{background:linear-gradient(145deg,rgba(255,212,0,.14),rgba(255,255,255,.02));border-color:rgba(255,212,0,.38)}.extra-price-card .service-link{margin-top:auto;width:max-content}.pricing-disclaimer{margin:0;color:#817e78;font-size:.78rem;line-height:1.6}
+@media(max-width:980px){.extras-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:620px){.extras-grid{grid-template-columns:1fr}.price-table-wrap{border-radius:18px}.premium-price-table th,.premium-price-table td{padding:15px 16px}.extra-price-card{min-height:auto}.brand>span:last-child,.mobile-menu-brand>span:last-child{display:inline}.brand-mark{width:46px!important}}
+</style>
+<style>
+:root{--cream:#ffd400;--cream-soft:#e6bd00;--coffee:#d71920;--text:#f7f7f5;}
+body{background:#050505;}
+.hero{background:linear-gradient(90deg,rgba(0,0,0,.92),rgba(0,0,0,.35)),url("https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=2200&q=88") center/cover;}
+.hero-video{display:block!important;}
+.brand-mark{border:0!important;border-radius:0!important;width:88px;height:34px;background:transparent!important;overflow:visible!important;}
+.brand-mark img{object-fit:contain!important;width:100%!important;height:100%!important;}
+.mobile-menu-brand-mark{width:84px;height:32px;border-radius:0!important;border:0!important;overflow:visible!important;background:transparent!important;}
+.mobile-menu-brand-mark img{object-fit:contain!important;width:100%!important;height:100%!important;}
+.brand>span:last-child,.mobile-menu-brand>span:last-child{display:none;}
+.btn-primary{background:#ffd400;color:#080808;}
+.btn-primary:hover{background:#fff;}
+.eyebrow,.service-num,.catalog-kicker{color:#ffd400;}
+.eyebrow::before{background:#ffd400;}
+.hero h1 span{color:#ffd400;}
+.experience{background:#ffd400;}
+.price-list-premium{max-width:420px;margin:24px auto 0;border-radius:20px;box-shadow:0 25px 70px rgba(0,0,0,.45);}
+.superwash-badge{display:inline-flex;gap:10px;align-items:center;padding:10px 15px;border:1px solid rgba(255,212,0,.35);border-radius:999px;background:rgba(255,212,0,.08);color:#ffd400;font-weight:700;font-size:.82rem;}
+@media(max-width:680px){.brand-mark{width:74px}}
+
+/* --- Botones premium: shine sweep, lift, pulso e invitación al tacto --- */
+.btn,.mobile-menu-cta,.service-link{
+  position:relative;
+  overflow:hidden;
+  -webkit-tap-highlight-color:transparent;
+  transition:transform .38s cubic-bezier(.19,1,.22,1),box-shadow .38s cubic-bezier(.19,1,.22,1),background-color .3s ease,color .3s ease,border-color .3s ease;
+  will-change:transform;
+}
+.btn::before{
+  content:"";
+  position:absolute;
+  top:0;left:-75%;
+  width:45%;height:100%;
+  background:linear-gradient(115deg,transparent,rgba(255,255,255,.55),transparent);
+  transform:skewX(-22deg);
+  transition:left .75s cubic-bezier(.19,1,.22,1);
+  pointer-events:none;
+  z-index:1;
+}
+.btn:hover::before{left:140%;}
+.btn>*{position:relative;z-index:2;}
+.btn:hover{transform:translateY(-3px);}
+.btn:active,.mobile-menu-cta:active,.service-link:active{
+  transform:scale(.94) translateY(0)!important;
+  transition:transform .12s cubic-bezier(.19,1,.22,1);
+}
+.btn-primary{
+  box-shadow:0 8px 22px -6px rgba(255,212,0,.4),0 0 0 0 rgba(255,212,0,.4);
+  animation:swBtnPulse 2.8s ease-in-out infinite;
+}
+.btn-primary:hover{
+  box-shadow:0 18px 38px -8px rgba(255,212,0,.6);
+  animation-play-state:paused;
+  transform:translateY(-3px) scale(1.02);
+}
+@keyframes swBtnPulse{
+  0%,100%{box-shadow:0 8px 22px -6px rgba(255,212,0,.4),0 0 0 0 rgba(255,212,0,.32);}
+  50%{box-shadow:0 8px 26px -4px rgba(255,212,0,.55),0 0 0 9px rgba(255,212,0,0);}
+}
+.btn-outline:hover{
+  box-shadow:0 14px 30px -10px rgba(255,255,255,.22);
+  background:rgba(255,255,255,.06);
+}
+.btn-dark:hover{
+  box-shadow:0 14px 30px -10px rgba(0,0,0,.6);
+}
+.mobile-menu-cta{transition:transform .3s ease,background .3s ease,color .3s ease,box-shadow .3s ease;}
+.mobile-menu-cta:hover{box-shadow:0 12px 28px -8px rgba(255,212,0,.45);transform:translateY(-2px);}
+@media(prefers-reduced-motion:reduce){
+  .btn-primary{animation:none;}
+  .btn,.btn::before,.mobile-menu-cta,.service-link{transition:none;animation:none;}
+}
+.hero-trust{
+  margin:16px 0 0;
+  font-size:.86rem;
+  font-weight:600;
+  letter-spacing:.02em;
+  color:rgba(247,247,245,.72);
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.hero-trust span{color:#ffd400;}
+@media(max-width:680px){.hero-trust{font-size:.8rem;}}
+</style><!-- Reemplaza los elementos .sw-initials por tu URL de Cloudinary cuando cargues el logo. -->
+</head>
+<body>
+<header class="topbar" id="topbar">
+<div class="container nav">
+<a aria-label="Ir al inicio" class="brand" href="#inicio">
+<span class="brand-mark"><img alt="Super Wash MTY" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186033/IMG_9343_rwg0ax_emlmnd.png"/></span>
+<span>Super Wash MTY</span>
+</a>
+<nav aria-label="Navegación principal" class="nav-links">
+<a href="#" id="openAboutModalDesktop">Quiénes somos</a>
+<a href="#servicios">Servicios</a>
+<a href="#experiencia">A domicilio</a>
+<a href="#precios">Precios</a>
+<a href="#galeria">Galería</a>
+<a href="#estudio">Sucursal</a>
+<a class="btn btn-primary" href="#contacto">Agendar servicio</a>
+</nav>
+<button aria-label="Abrir menú" class="menu-toggle" id="menuToggle">
+<span aria-hidden="true" class="menu-toggle-bars">
+<span></span><span></span><span></span>
+</span>
+</button>
+</div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+<div aria-hidden="true" class="mobile-menu-bg"></div>
+<div class="mobile-menu-inner">
+<div class="mobile-menu-top">
+<a class="mobile-menu-brand" href="#inicio">
+<span class="mobile-menu-brand-mark"><img alt="Super Wash MTY" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186033/IMG_9343_rwg0ax_emlmnd.png"/></span>
+<span>Super Wash MTY</span>
+</a>
+<button aria-label="Cerrar menú" class="close-menu" id="closeMenu">×</button>
+</div>
+<nav class="mobile-nav">
+<a href="#" id="openAboutModal" style="--i:0">
+<span class="mobile-nav-num">01</span>
+<span class="mobile-nav-label">Quiénes somos</span>
+<span aria-hidden="true" class="mobile-nav-arrow">→</span>
+</a>
+<a href="#servicios" style="--i:1">
+<span class="mobile-nav-num">02</span>
+<span class="mobile-nav-label">Servicios</span>
+<span aria-hidden="true" class="mobile-nav-arrow">→</span>
+</a>
+<a href="#experiencia" style="--i:2">A domicilio</a>
+<a href="#precios" style="--i:3">Precios</a>
+<a href="#galeria" style="--i:4">
+<span class="mobile-nav-num">05</span>
+<span class="mobile-nav-label">Galería</span>
+<span aria-hidden="true" class="mobile-nav-arrow">→</span>
+</a>
+<a href="#estudio" style="--i:5">Sucursal</a>
+</nav>
+<div class="mobile-menu-bottom">
+<a class="mobile-menu-cta" href="#contacto">Agendar servicio</a>
+<div class="mobile-menu-info">
+<a href="https://maps.app.goo.gl/VhCETLYhraq8TUKR7?g_st=ic" rel="noopener" target="_blank">Monterrey, Nuevo León</a>
+<a href="https://wa.me/528116541872" rel="noopener" target="_blank">+52 81 1654 1872</a>
+</div>
+<div class="mobile-social">
+<a aria-label="Facebook de Super Wash MTY" href="https://www.instagram.com/superwashmty" rel="noopener" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.89h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94Z"></path></svg>
+</a>
+<a aria-label="Instagram de Super Wash MTY" href="https://www.instagram.com/superwashmty" rel="noopener" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 2c-2.72 0-3.06.01-4.12.06-1.06.05-1.79.22-2.43.47-.66.26-1.22.6-1.77 1.16-.56.55-.9 1.11-1.16 1.77-.25.64-.42 1.37-.47 2.43C2 8.94 2 9.28 2 12s.01 3.06.06 4.12c.05 1.06.22 1.79.47 2.43.26.66.6 1.22 1.16 1.77.55.56 1.11.9 1.77 1.16.64.25 1.37.42 2.43.47C8.94 22 9.28 22 12 22s3.06-.01 4.12-.06c1.06-.05 1.79-.22 2.43-.47.66-.26 1.22-.6 1.77-1.16.56-.55.9-1.11 1.16-1.77.25-.64.42-1.37.47-2.43.05-1.06.06-1.4.06-4.12s-.01-3.06-.06-4.12c-.05-1.06-.22-1.79-.47-2.43-.26-.66-.6-1.22-1.16-1.77-.55-.56-1.11-.9-1.77-1.16-.64-.25-1.37-.42-2.43-.47C15.06 2.01 14.72 2 12 2Zm0 1.8c2.67 0 2.99.01 4.04.06.98.04 1.51.21 1.86.34.47.18.8.4 1.15.75.35.35.57.68.75 1.15.13.35.3.88.34 1.86.05 1.05.06 1.37.06 4.04s-.01 2.99-.06 4.04c-.04.98-.21 1.51-.34 1.86-.18.47-.4.8-.75 1.15-.35.35-.68.57-1.15.75-.35.13-.88.3-1.86.34-1.05.05-1.37.06-4.04.06s-2.99-.01-4.04-.06c-.98-.04-1.51-.21-1.86-.34-.47-.18-.8-.4-1.15-.75-.35-.35-.57-.68-.75-1.15-.13-.35-.3-.88-.34-1.86C3.81 14.99 3.8 14.67 3.8 12s.01-2.99.06-4.04c.04-.98.21-1.51.34-1.86.18-.47.4-.8.75-1.15.35-.35.68-.57 1.15-.75.35-.13.88-.3 1.86-.34C9.01 3.81 9.33 3.8 12 3.8Zm0 3.05a5.15 5.15 0 1 0 0 10.3 5.15 5.15 0 0 0 0-10.3Zm0 8.5a3.35 3.35 0 1 1 0-6.7 3.35 3.35 0 0 1 0 6.7Zm5.34-8.7a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0Z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+<main>
+<section class="hero" id="inicio">
+<video autoplay="" class="hero-video" id="heroVideo" loop="" muted="" playsinline="" poster="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&amp;fit=crop&amp;w=2200&amp;q=76" preload="auto">
+<source src="https://res.cloudinary.com/dgp7uhps3/video/upload/v1785186494/DAF89176-3FA9-4271-9ED6-CF05828714FA_aowkg6.mp4" type="video/mp4"/>
+</video>
+<div class="container hero-content">
+<div class="hero-top-row">
+<span class="eyebrow">Lavado profesional en Monterrey · Sucursal y servicio a domicilio</span>
+<a aria-label="Super Wash MTY en Google Maps" class="hero-rating" href="https://maps.app.goo.gl/VhCETLYhraq8TUKR7?g_st=ic" rel="noopener" target="_blank">
+<svg aria-hidden="true" class="hero-rating-g" viewbox="0 0 48 48">
+<path d="M43.6 20.5H42V20.4H24v7.2h11.3c-1.6 4.7-6.1 8.1-11.3 8.1-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 3l5.1-5.1C33.8 6.1 29.2 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.2-.1-2.4-.4-3.5z" fill="#FFC107"></path>
+<path d="M6.3 14.7l5.9 4.3C13.8 15.5 18.6 12 24 12c3.1 0 5.8 1.1 8 3l5.1-5.1C33.8 6.1 29.2 4 24 4 16.3 4 9.6 8.3 6.3 14.7z" fill="#FF3D00"></path>
+<path d="M24 44c5.1 0 9.7-1.9 13.2-5.1l-6.1-5.2C29.2 35.4 26.7 36.2 24 36.2c-5.2 0-9.6-3.3-11.2-8l-6.1 4.7C9.5 39.7 16.2 44 24 44z" fill="#4CAF50"></path>
+<path d="M43.6 20.5H42V20.4H24v7.2h11.3c-.8 2.3-2.2 4.2-4.2 5.6l6.1 5.2C40.5 35.9 44 30.6 44 24c0-1.2-.1-2.4-.4-3.5z" fill="#1976D2"></path>
+</svg>
+<span aria-hidden="true" class="hero-rating-stars">
+<svg viewbox="0 0 20 20"><path d="M10 1.5l2.6 5.5 6 .7-4.4 4.1 1.2 6-5.4-3-5.4 3 1.2-6-4.4-4.1 6-.7z"></path></svg>
+<svg viewbox="0 0 20 20"><path d="M10 1.5l2.6 5.5 6 .7-4.4 4.1 1.2 6-5.4-3-5.4 3 1.2-6-4.4-4.1 6-.7z"></path></svg>
+<svg viewbox="0 0 20 20"><path d="M10 1.5l2.6 5.5 6 .7-4.4 4.1 1.2 6-5.4-3-5.4 3 1.2-6-4.4-4.1 6-.7z"></path></svg>
+<svg viewbox="0 0 20 20"><path d="M10 1.5l2.6 5.5 6 .7-4.4 4.1 1.2 6-5.4-3-5.4 3 1.2-6-4.4-4.1 6-.7z"></path></svg>
+<svg viewbox="0 0 20 20"><path d="M10 1.5l2.6 5.5 6 .7-4.4 4.1 1.2 6-5.4-3-5.4 3 1.2-6-4.4-4.1 6-.7z"></path></svg>
+</span>
+<span class="hero-rating-score">MTY</span>
+<span class="hero-rating-count">(Ver ubicación y reseñas)</span>
+</a>
+</div>
+<h1>Tu auto habla por ti. <span>Haz que siempre se vea impecable.</span></h1>
+<p class="lead">Recupera la presencia de tu vehículo con un lavado profesional, rápido y cuidadosamente ejecutado. Atendemos autos, SUV y pickups en nuestra sucursal o directamente en tu domicilio.</p>
+<div class="hero-actions">
+<a class="btn btn-primary" href="https://wa.me/528116541872?text=Hola%2C%20quiero%20agendar%20mi%20lavado." rel="noopener" target="_blank">Agendar mi lavado</a>
+<button class="btn btn-outline" id="openServicesModal" type="button">Ver servicios y precios</button>
+</div>
+<p class="hero-trust">Atención profesional <span aria-hidden="true">·</span> Precios claros <span aria-hidden="true">·</span> Reserva rápida por WhatsApp</p>
+<div class="hero-meta">
+<div class="hero-meta-card"><span class="hero-meta-num">01</span><strong>Resultado impecable</strong><p>Lavado profesional y atención a los detalles que hacen que tu vehículo vuelva a destacar.</p></div>
+<div class="hero-meta-card"><span class="hero-meta-num">02</span><strong>Sin perder tu día</strong><p>Procesos ágiles y opción de servicio a domicilio para cuidar tu auto sin alterar tu rutina.</p></div>
+<div class="hero-meta-card"><span class="hero-meta-num">03</span><strong>Cuidado para cada vehículo</strong><p>Atención especializada para autos, SUV, pickups y vehículos modificados.</p></div>
+</div>
+</div>
+</section>
+<section class="section concept-section">
+<div class="container intro-grid">
+<div class="intro-copy reveal"><span class="eyebrow">El estándar Super Wash</span><h2>Lavamos más autos. Cuidamos cada detalle.</h2><p>Super Wash MTY combina capacidad de atención, procesos organizados y terminaciones premium para recibir un flujo constante de vehículos sin convertir el servicio en algo genérico.</p><p>Cada unidad se atiende según su tamaño, condición y objetivo: desde un lavado exterior ágil hasta servicios completos, motor, chasis y atención a domicilio.</p><span class="superwash-badge">Monterrey · Nuevo León · México</span></div>
+<div class="intro-media">
+<figure class="media-card reveal">
+<div class="media-card-frame">
+<video autoplay="" id="conceptVideo" loop="" muted="" playsinline="" preload="auto">
+<source src="https://res.cloudinary.com/dgp7uhps3/video/upload/v1785192670/ScreenRecording_07-27-2026_19-39-41_1_e0deme.mp4" type="video/mp4"/>
+<source src="https://res.cloudinary.com/dgp7uhps3/video/upload/v1785192670/ScreenRecording_07-27-2026_19-39-41_1_e0deme.mov" type="video/quicktime"/>
+</video>
+<figcaption class="media-label">Resultados que se aprecian en cada superficie.</figcaption>
+</div>
+</figure>
+<figure class="media-card small reveal">
+<div class="media-card-frame">
+<img alt="Proceso profesional de detailing automotriz" decoding="async" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785192327/IMG_9368_koblqk.jpg"/>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section class="section services-wrap bg-overlay-section" id="servicios" style="--bg-photo:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186487/IMG_9357_rmrc5p.jpg')">
+<div class="container">
+<div class="section-head reveal"><div><span class="eyebrow">Servicios principales</span><h2>Una solución para cada vehículo.</h2></div><p>Selecciona el servicio ideal según el tipo de unidad. Atendemos autos, SUV, pickups, RZR y Jeep modificados.</p></div>
+<div class="services-grid"><article class="service-card large reveal" style="--image:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186485/IMG_9361_pgwqtl.jpg')"><div class="service-content"><div class="service-num">01</div><h3>Lavado exterior</h3><p>Limpieza eficiente de carrocería, cristales, rines y acabado final.</p><a class="service-link" href="https://wa.me/528116541872?text=Hola%2C%20quiero%20consultar%20por%20Lavado%20exterior" target="_blank">Cotizar servicio</a></div></article><article class="service-card large reveal" style="--image:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186486/IMG_9360_wv8t5s.jpg')"><div class="service-content"><div class="service-num">02</div><h3>Lavado completo</h3><p>Exterior e interior con aspirado, limpieza de superficies y presentación premium.</p><a class="service-link" href="https://wa.me/528116541872?text=Hola%2C%20quiero%20consultar%20por%20Lavado%20completo" target="_blank">Cotizar servicio</a></div></article><article class="service-card reveal" style="--image:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186484/IMG_9356_mwlmsk.jpg')"><div class="service-content"><div class="service-num">03</div><h3>Lavado de motor</h3><p>Servicio especializado para mejorar la presentación del compartimiento del motor.</p><a class="service-link" href="https://wa.me/528116541872?text=Hola%2C%20quiero%20consultar%20por%20Lavado%20de%20motor" target="_blank">Cotizar servicio</a></div></article><article class="service-card reveal" style="--image:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186489/IMG_9362_r5wawc.jpg')"><div class="service-content"><div class="service-num">04</div><h3>Chasis y lubricación</h3><p>Lavado de chasis, lubricación y servicios complementarios para uso urbano o exigente.</p><a class="service-link" href="https://wa.me/528116541872?text=Hola%2C%20quiero%20consultar%20por%20Chasis%20y%20lubricaci%C3%B3n" target="_blank">Cotizar servicio</a></div></article><article class="service-card reveal" style="--image:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186487/IMG_9359_mmcenb.jpg')"><div class="service-content"><div class="service-num">05</div><h3>Servicio a domicilio</h3><p>Coordinamos el lavado en tu casa, oficina o ubicación dentro de nuestra zona de cobertura.</p><a class="service-link" href="https://wa.me/528116541872?text=Hola%2C%20quiero%20consultar%20por%20Servicio%20a%20domicilio" target="_blank">Cotizar servicio</a></div></article></div>
+<div class="reveal" style="margin-top:34px;text-align:center">
+<button class="btn btn-primary" id="openServicesModalInline" type="button">Ver catálogo completo</button>
+</div>
+</div>
+</section>
+<section class="section" id="experiencia"><div class="container"><div class="experience reveal"><div class="experience-image" style="background:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186487/IMG_9359_mmcenb.jpg') center/cover"></div><div class="experience-copy"><span class="eyebrow">Super Wash donde estés</span><h2>Lavado premium a domicilio.</h2><p>Ideal para clientes que priorizan su tiempo. Coordinamos la atención en casa, oficina o empresa, llevando el equipo y el proceso necesario para entregar una terminación de alto nivel.</p><ul class="feature-list"><li>Agenda directa por WhatsApp</li><li>Atención para autos, SUV y pickups</li><li>Servicio sujeto a zona de cobertura</li><li>Perfecto para flotillas y clientes frecuentes</li></ul><a class="btn btn-dark" href="https://wa.me/528116541872?text=Hola%2C%20quiero%20consultar%20por%20el%20servicio%20a%20domicilio." target="_blank">Solicitar a domicilio</a></div></div></div></section>
+<section class="section bg-overlay-section" id="precios" style="--bg-photo:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186489/IMG_9362_r5wawc.jpg')"><div class="container">
+<div class="section-head reveal">
+<div><span class="eyebrow">Servicios y precios</span><h2>Elige el servicio ideal para tu unidad.</h2></div>
+<p>Precios en pesos mexicanos según el tipo de vehículo. Los servicios especiales y el lavado a domicilio se confirman por WhatsApp.</p>
+</div>
+<div class="price-catalog reveal">
+<div class="price-table-wrap">
+<table class="premium-price-table">
+<thead><tr><th>Tipo de vehículo</th><th>Solo exterior</th><th>Completo</th><th>Lavado de motor</th><th></th></tr></thead>
+<tbody>
+<tr><td><strong>Auto</strong></td><td>$200</td><td>$250</td><td>$300</td><td><a href="https://wa.me/528116541872?text=Hola%2C%20quiero%20agendar%20lavado%20para%20un%20auto." target="_blank">Agendar</a></td></tr>
+<tr><td><strong>SUV chica</strong></td><td>$250</td><td>$300</td><td>$400</td><td><a href="https://wa.me/528116541872?text=Hola%2C%20quiero%20agendar%20lavado%20para%20una%20SUV%20chica." target="_blank">Agendar</a></td></tr>
+<tr><td><strong>SUV grande</strong></td><td>$350</td><td>$400</td><td>$400</td><td><a href="https://wa.me/528116541872?text=Hola%2C%20quiero%20agendar%20lavado%20para%20una%20SUV%20grande." target="_blank">Agendar</a></td></tr>
+<tr><td><strong>Pickup 2 puertas</strong></td><td>$350</td><td>$400</td><td>$400</td><td><a href="https://wa.me/528116541872?text=Hola%2C%20quiero%20agendar%20lavado%20para%20una%20pickup%20de%202%20puertas." target="_blank">Agendar</a></td></tr>
+<tr><td><strong>Pickup 4 puertas</strong></td><td>$400</td><td>$450</td><td>$450</td><td><a href="https://wa.me/528116541872?text=Hola%2C%20quiero%20agendar%20lavado%20para%20una%20pickup%20de%204%20puertas." target="_blank">Agendar</a></td></tr>
+<tr><td><strong>RZR</strong><small>A partir de</small></td><td>$500</td><td>$600</td><td>No aplica</td><td><a href="https://wa.me/528116541872?text=Hola%2C%20quiero%20cotizar%20el%20lavado%20de%20un%20RZR." target="_blank">Cotizar</a></td></tr>
+<tr><td><strong>Jeep modificado</strong><small>A partir de</small></td><td>$500</td><td>$500</td><td>$500</td><td><a href="https://wa.me/528116541872?text=Hola%2C%20quiero%20cotizar%20el%20lavado%20de%20un%20Jeep%20modificado." target="_blank">Cotizar</a></td></tr>
+</tbody>
+</table>
+</div>
+<div class="extras-grid">
+<article class="extra-price-card"><span>Servicio especial</span><h3>Lavado de chasis</h3><strong>$500</strong><p>Precio indicado en la lista compartida.</p></article>
+<article class="extra-price-card"><span>Servicio especial</span><h3>Lubricación de chasis</h3><strong>$450</strong><p>Ideal como complemento del mantenimiento.</p></article>
+<article class="extra-price-card"><span>Complemento</span><h3>Engrasado por grasera</h3><strong>$50</strong><p>Aplicado por punto de engrase.</p></article>
+<article class="extra-price-card accent"><span>Servicio móvil</span><h3>Lavado a domicilio</h3><strong>Cotización</strong><p>Consulta cobertura, disponibilidad y costo según ubicación.</p><a class="service-link" href="https://wa.me/528116541872?text=Hola%2C%20quiero%20cotizar%20un%20lavado%20a%20domicilio." target="_blank">Consultar cobertura</a></article>
+</div>
+<p class="pricing-disclaimer">Los precios pueden variar según tamaño, nivel de suciedad, modificaciones y condiciones de la unidad. No nos hacemos responsables por pérdidas de objetos dentro o fuera del vehículo ni por daños mecánicos derivados del lavado de motor.</p>
+</div></div></section>
+<section class="section-tight bg-overlay-section" style="--bg-photo:url('https://res.cloudinary.com/dgp7uhps3/image/upload/v1785192331/IMG_9369_k8oysb.jpg')">
+<div class="container">
+<div class="section-head reveal">
+<div>
+<span class="eyebrow">Cómo trabajamos</span>
+<h2>Un proceso claro desde la evaluación hasta la entrega.</h2>
+</div>
+<p>La recomendación se basa en el estado real del vehículo. No agregamos procesos que no sean necesarios.</p>
+</div>
+<div class="process-grid reveal">
+<div class="process-step"><span>01</span><h3>Cuéntanos</h3><p>Indica modelo, año, estado y servicio de interés.</p></div>
+<div class="process-step"><span>02</span><h3>Evaluamos</h3><p>Revisamos el vehículo y definimos el tratamiento correcto.</p></div>
+<div class="process-step"><span>03</span><h3>Reservamos</h3><p>Coordinamos el ingreso al estudio con fecha y horario.</p></div>
+<div class="process-step"><span>04</span><h3>Trabajamos</h3><p>Ejecutamos cada etapa con productos y herramientas adecuadas.</p></div>
+<div class="process-step"><span>05</span><h3>Entregamos</h3><p>Revisamos el resultado y explicamos el mantenimiento.</p></div>
+</div>
+</div>
+</section>
+<section class="section" id="galeria">
+<div class="container">
+<div class="section-head reveal">
+<div>
+<span class="eyebrow">Galería</span>
+<h2>Resultados que hablan por sí solos.</h2>
+</div>
+<p>Una selección visual del tipo de cuidado, limpieza y presentación que representa a Super Wash MTY.</p>
+</div>
+<div class="gallery-grid" id="galleryGrid">
+
+<article class="gallery-card reveal" data-index="1" style="transition-delay:0ms">
+<img alt="Lavado exterior de vehículo en Super Wash MTY" decoding="async" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186491/IMG_9348_wd2ele.jpg"/>
+<span aria-hidden="true" class="gallery-expand"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6"></path></svg></span>
+<span class="gallery-card-tag">Ver más</span>
+</article>
+
+<article class="gallery-card reveal" data-index="2" style="transition-delay:60ms">
+<img alt="Detalle de acabado brillante en carrocería" decoding="async" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186491/IMG_9349_arhyj6.jpg"/>
+<span aria-hidden="true" class="gallery-expand"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6"></path></svg></span>
+<span class="gallery-card-tag">Ver más</span>
+</article>
+
+<article class="gallery-card reveal" data-index="3" style="transition-delay:120ms">
+<img alt="Proceso de secado y pulido final" decoding="async" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186491/IMG_9347_pfy8b1.jpg"/>
+<span aria-hidden="true" class="gallery-expand"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6"></path></svg></span>
+<span class="gallery-card-tag">Ver más</span>
+</article>
+
+<article class="gallery-card reveal" data-index="4" style="transition-delay:180ms">
+<img alt="Limpieza profunda de interior" decoding="async" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186490/IMG_9353_sah8wf.jpg"/>
+<span aria-hidden="true" class="gallery-expand"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6"></path></svg></span>
+<span class="gallery-card-tag">Ver más</span>
+</article>
+
+<article class="gallery-card reveal" data-index="5" style="transition-delay:0ms">
+<img alt="Vehículo terminado con acabado premium" decoding="async" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186490/IMG_9350_hpqcrc.jpg"/>
+<span aria-hidden="true" class="gallery-expand"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6"></path></svg></span>
+<span class="gallery-card-tag">Ver más</span>
+</article>
+
+<article class="gallery-card reveal" data-index="6" style="transition-delay:60ms">
+<img alt="Detalle de rines y llantas después del lavado" decoding="async" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186489/IMG_9352_n3c03q.jpg"/>
+<span aria-hidden="true" class="gallery-expand"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6"></path></svg></span>
+<span class="gallery-card-tag">Ver más</span>
+</article>
+
+<article class="gallery-card reveal" data-index="7" style="transition-delay:120ms">
+<img alt="Atención al detalle en cada superficie" decoding="async" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186489/IMG_9355_iao6ia.jpg"/>
+<span aria-hidden="true" class="gallery-expand"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6"></path></svg></span>
+<span class="gallery-card-tag">Ver más</span>
+</article>
+
+<article class="gallery-card reveal" data-index="8" style="transition-delay:180ms">
+<img alt="Resultado de lavado completo en camioneta" decoding="async" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186489/IMG_9362_r5wawc.jpg"/>
+<span aria-hidden="true" class="gallery-expand"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6"></path></svg></span>
+<span class="gallery-card-tag">Ver más</span>
+</article>
+
+<article class="gallery-card reveal" data-index="9" style="transition-delay:0ms">
+<img alt="Presentación final del vehículo" decoding="async" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186489/IMG_9351_uprmsk.jpg"/>
+<span aria-hidden="true" class="gallery-expand"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6"></path></svg></span>
+<span class="gallery-card-tag">Ver más</span>
+</article>
+
+<article class="gallery-card reveal" data-index="10" style="transition-delay:60ms">
+<img alt="Trabajo de detailing en curso" decoding="async" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186488/IMG_9354_dqgria.jpg"/>
+<span aria-hidden="true" class="gallery-expand"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6"></path></svg></span>
+<span class="gallery-card-tag">Ver más</span>
+</article>
+
+<article class="gallery-card reveal" data-index="11" style="transition-delay:120ms">
+<img alt="Acabado impecable en pintura oscura" decoding="async" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186487/IMG_9358_owika4.jpg"/>
+<span aria-hidden="true" class="gallery-expand"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6"></path></svg></span>
+<span class="gallery-card-tag">Ver más</span>
+</article>
+
+<article class="gallery-card reveal" data-index="12" style="transition-delay:180ms">
+<img alt="Cuidado de interior y tapicería" decoding="async" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186487/IMG_9357_rmrc5p.jpg"/>
+<span aria-hidden="true" class="gallery-expand"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6"></path></svg></span>
+<span class="gallery-card-tag">Ver más</span>
+</article>
+
+<article class="gallery-card reveal" data-index="13" style="transition-delay:0ms">
+<img alt="Vehículo listo para entrega" decoding="async" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186486/IMG_9360_wv8t5s.jpg"/>
+<span aria-hidden="true" class="gallery-expand"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6"></path></svg></span>
+<span class="gallery-card-tag">Ver más</span>
+</article>
+
+<article class="gallery-card reveal" data-index="14" style="transition-delay:60ms">
+<img alt="Detalle de limpieza en zona de motor" decoding="async" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186485/IMG_9361_pgwqtl.jpg"/>
+<span aria-hidden="true" class="gallery-expand"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6"></path></svg></span>
+<span class="gallery-card-tag">Ver más</span>
+</article>
+
+<article class="gallery-card reveal" data-index="15" style="transition-delay:120ms">
+<img alt="Resultado premium en vehículo SUV" decoding="async" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186484/IMG_9356_mwlmsk.jpg"/>
+<span aria-hidden="true" class="gallery-expand"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6"></path></svg></span>
+<span class="gallery-card-tag">Ver más</span>
+</article>
+</div>
+</div>
+</section>
+<div aria-hidden="true" aria-label="Imagen ampliada de la galería" class="gallery-lightbox" id="galleryLightbox" role="dialog">
+<button aria-label="Cerrar imagen" class="gallery-lightbox-close" id="galleryLightboxClose" type="button">×</button>
+<button aria-label="Imagen anterior" class="gallery-lightbox-nav gallery-lightbox-prev" id="galleryLightboxPrev" type="button">‹</button>
+<figure>
+<img alt="" decoding="async" id="galleryLightboxImg" loading="lazy" src=""/>
+</figure>
+<button aria-label="Imagen siguiente" class="gallery-lightbox-nav gallery-lightbox-next" id="galleryLightboxNext" type="button">›</button>
+</div>
+<section class="section" id="estudio">
+<div class="container">
+<div class="location-grid">
+<div class="location-card location-copy bg-overlay-section reveal" style="--bg-photo:url('https://images.unsplash.com/photo-1605164599901-7e0011e6cd3f?auto=format&amp;fit=crop&amp;w=1600&amp;q=74')">
+<span class="eyebrow">Nuestro estudio</span>
+<h2>Visítanos en Monterrey.</h2>
+<p class="muted">Atendemos un alto flujo de vehículos con procesos organizados y enfoque premium. También contamos con servicio a domicilio.</p>
+<address>Av. Revolución #401, Jardines del Contry<br/>Monterrey, Nuevo León, México</address>
+<div class="hero-actions">
+<a class="btn btn-primary" href="https://maps.app.goo.gl/VhCETLYhraq8TUKR7?g_st=ic" rel="noopener" target="_blank">Abrir en Google Maps</a>
+<a class="btn btn-outline" href="https://wa.me/528116541872?text=Hola%2C%20quiero%20consultar%20por%20una%20reserva." target="_blank">Escribir por WhatsApp</a>
+</div>
+</div>
+<div class="location-card location-map reveal">
+<iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Av.%20Revoluci%C3%B3n%20401%2C%20Jardines%20del%20Contry%2C%20Monterrey%2C%20Nuevo%20Le%C3%B3n%2C%20M%C3%A9xico&amp;output=embed" title="Ubicación de Super Wash MTY en Monterrey">
+</iframe>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="contacto">
+<div class="container">
+<div class="cta-panel reveal">
+<div>
+<span class="eyebrow">Agenda tu vehículo</span>
+<h2>Dinos qué vehículo tienes. Nosotros te recomendamos el servicio.</h2>
+<p>Recibe atención rápida por WhatsApp para confirmar precio, disponibilidad y modalidad en sucursal o a domicilio.</p>
+<div class="hero-actions">
+<a class="btn btn-primary" href="https://wa.me/528116541872?text=Hola%2C%20quiero%20reservar%20una%20evaluaci%C3%B3n.%20Mi%20veh%C3%ADculo%20es%3A%20" target="_blank">Reservar por WhatsApp</a>
+<a class="btn btn-outline" href="tel:+528116541872">Llamar ahora</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a class="brand" href="#inicio">
+<span class="brand-mark"><img alt="Super Wash MTY" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186033/IMG_9343_rwg0ax_emlmnd.png"/></span>
+<span>Super Wash MTY</span>
+</a>
+<p>Lavado y auto detailing premium en Monterrey, con atención en sucursal y a domicilio.</p>
+</div>
+<div class="footer-col">
+<h4>Explorar</h4>
+<a href="#servicios">Servicios</a>
+<a href="#experiencia">A domicilio</a>
+<a href="#precios">Precios</a>
+<a href="#estudio">Sucursal</a>
+</div>
+<div class="footer-col">
+<h4>Contacto</h4>
+<a href="https://wa.me/528116541872" target="_blank">WhatsApp</a>
+<a href="tel:+528116541872">+52 81 1654 1872</a>
+<a href="https://www.instagram.com/superwashmty" target="_blank">Instagram</a>
+<a href="https://www.instagram.com/superwashmty" target="_blank">Instagram</a>
+<a href="mailto:contacto@superwashmty.com">contacto@superwashmty.com</a>
+</div>
+<div class="footer-col">
+<h4>Visítanos</h4>
+<a href="https://maps.app.goo.gl/VhCETLYhraq8TUKR7?g_st=ic" target="_blank">Monterrey, Nuevo León</a>
+<a href="#contacto">Agendar servicio</a>
+<a href="#experiencia">A domicilio</a>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© <span id="year"></span> Super Wash MTY. Todos los derechos reservados.</span>
+<span>Sitio diseñado para una experiencia automotriz diferente.</span>
+</div>
+</div>
+</footer>
+<script>
+    try {
+      const topbar = document.getElementById('topbar');
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const closeMenu = document.getElementById('closeMenu');
+      const mobileLinks = mobileMenu.querySelectorAll('a');
+
+      let lastScrollY = window.scrollY;
+      window.addEventListener('scroll', () => {
+        const currentY = window.scrollY;
+        topbar.classList.toggle('scrolled', currentY > 30);
+
+        if (!document.body.classList.contains('menu-open')) {
+          if (currentY > lastScrollY && currentY > 140) {
+            topbar.classList.add('nav-hidden');
+          } else {
+            topbar.classList.remove('nav-hidden');
+          }
+        }
+        lastScrollY = currentY;
+      }, { passive: true });
+
+      const openMenu = () => {
+        mobileMenu.classList.add('open');
+        document.body.classList.add('menu-open');
+        topbar.classList.remove('nav-hidden');
+      };
+
+      const closeMobileMenu = () => {
+        mobileMenu.classList.remove('open');
+        document.body.classList.remove('menu-open');
+      };
+
+      menuToggle.addEventListener('click', openMenu);
+      closeMenu.addEventListener('click', closeMobileMenu);
+      mobileLinks.forEach(link => link.addEventListener('click', closeMobileMenu));
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+      // Video de servicio: reproducción continua, gestionada por el script
+      // general de autoplay (ver más abajo, junto a heroVideo y conceptVideo).
+      document.getElementById('year').textContent = new Date().getFullYear();
+    } catch (err) {
+      console.error('Error en script de navegación/menú:', err);
+    }
+  </script>
+<script>
+    // Script independiente y aislado para el modal "Quiénes somos".
+    window.addEventListener('DOMContentLoaded', () => {
+      try {
+        const aboutModal = document.getElementById('aboutModal');
+        const aboutOpeners = [
+          document.getElementById('openAboutModal'),
+          document.getElementById('openAboutModalDesktop')
+        ].filter(Boolean);
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMenuBtn = document.getElementById('closeMenu');
+
+        if (aboutModal && aboutOpeners.length) {
+          function openAboutModal(event) {
+            if (event) event.preventDefault();
+            // Si el link se abrió desde el menú hamburguer, lo cerramos primero.
+            if (mobileMenu && mobileMenu.classList.contains('open')) {
+              mobileMenu.classList.remove('open');
+              if (closeMenuBtn) closeMenuBtn.setAttribute('aria-expanded', 'false');
+            }
+            aboutModal.classList.add('open');
+            aboutModal.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('menu-open');
+          }
+
+          function closeAboutModal() {
+            aboutModal.classList.remove('open');
+            aboutModal.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('menu-open');
+          }
+
+          aboutOpeners.forEach(btn => btn.addEventListener('click', openAboutModal));
+
+          aboutModal.querySelectorAll('[data-close-about]').forEach(el => {
+            el.addEventListener('click', closeAboutModal);
+          });
+
+          aboutModal.addEventListener('click', event => {
+            if (event.target.closest('[data-close-about]')) closeAboutModal();
+          });
+
+          document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && aboutModal.classList.contains('open')) {
+              closeAboutModal();
+            }
+          });
+
+          const aboutContent = aboutModal.querySelector('.services-modal-content');
+          const aboutHeader = document.getElementById('aboutModalHeader');
+          if (aboutContent && aboutHeader) {
+            aboutContent.addEventListener('scroll', () => {
+              aboutHeader.classList.toggle('is-collapsed', aboutContent.scrollTop > 24);
+            });
+          }
+        }
+      } catch (err) {
+        console.error('Error en script del modal Quiénes somos:', err);
+      }
+    });
+  </script>
+<script>
+    // Script independiente y aislado para el modal de servicios,
+    // así ningún error en otro script impide que la X funcione.
+    window.addEventListener('DOMContentLoaded', () => {
+      try {
+        const servicesModal = document.getElementById('servicesModal');
+        const serviceOpeners = [
+          document.getElementById('openServicesModal'),
+          document.getElementById('openServicesModalInline')
+        ].filter(Boolean);
+
+        if (servicesModal) {
+          function openServicesModal() {
+            servicesModal.classList.add('open');
+            servicesModal.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('menu-open');
+          }
+
+          function closeServicesModal() {
+            servicesModal.classList.remove('open');
+            servicesModal.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('menu-open');
+          }
+
+          serviceOpeners.forEach(btn => btn.addEventListener('click', openServicesModal));
+
+          servicesModal.querySelectorAll('[data-close-services]').forEach(el => {
+            el.addEventListener('click', closeServicesModal);
+          });
+
+          // Delegación de eventos como respaldo adicional.
+          servicesModal.addEventListener('click', event => {
+            if (event.target.closest('[data-close-services]')) {
+              closeServicesModal();
+            }
+          });
+
+          document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && servicesModal.classList.contains('open')) {
+              closeServicesModal();
+            }
+          });
+
+          servicesModal.querySelectorAll('.catalog-nav a').forEach(link => {
+            link.addEventListener('click', event => {
+              event.preventDefault();
+              const target = servicesModal.querySelector(link.getAttribute('href'));
+              if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+          });
+
+          // Ocultar la barra de título al scrollear hacia abajo dentro del
+          // modal, y mostrarla de nuevo al volver arriba. La X nunca se
+          // esconde porque no forma parte del bloque que colapsa.
+          const modalContent = servicesModal.querySelector('.services-modal-content');
+          const modalHeader = document.getElementById('servicesModalHeader');
+          if (modalContent && modalHeader) {
+            modalContent.addEventListener('scroll', () => {
+              modalHeader.classList.toggle('is-collapsed', modalContent.scrollTop > 24);
+            });
+          }
+
+          // --- Selector de talla global ---------------------------------
+          const sizeGuideGrid = document.getElementById('sizeGuideGrid');
+          const sizeGuideSelected = document.getElementById('sizeGuideSelected');
+          let selectedVehicleSize = null;
+
+          function normalizeText(str) {
+            return (str || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+          }
+
+          const sizePatterns = {
+            S: [/talla s\b/, /citycar/, /\bsedan\b/],
+            M: [/talla m\b/, /talla m-l/],
+            L: [/talla l\b/, /talla m-l/, /pickup l/, /suv \/ pickup l/, /\bsuv\s*\/\s*pickup\b/],
+            XL: [/talla xl/, /\bvan\b/, /pickup xl/]
+          };
+
+          function findMatchingOptionIndex(selectEl, size) {
+            const patterns = sizePatterns[size] || [];
+            const options = [...selectEl.options];
+            for (let i = 0; i < options.length; i++) {
+              const t = normalizeText(options[i].textContent);
+              if (patterns.some(p => p.test(t))) return i;
+            }
+            return -1;
+          }
+
+          function applySizeToSelect(selectEl) {
+            if (!selectedVehicleSize || !selectEl) return;
+            const idx = findMatchingOptionIndex(selectEl, selectedVehicleSize);
+            if (idx > -1 && selectEl.selectedIndex !== idx) {
+              selectEl.selectedIndex = idx;
+              selectEl.dispatchEvent(new Event('change'));
+            }
+          }
+
+          function applySizeToAllSelects() {
+            servicesModal.querySelectorAll('.service-booking-select').forEach(applySizeToSelect);
+          }
+
+          function selectVehicleSize(size) {
+            selectedVehicleSize = size;
+            if (sizeGuideGrid) {
+              sizeGuideGrid.querySelectorAll('.size-card').forEach(btn => {
+                const active = btn.dataset.size === size;
+                btn.classList.toggle('selected', active);
+                btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+              });
+            }
+            if (sizeGuideSelected) {
+              sizeGuideSelected.textContent = 'Talla seleccionada: ' + size;
+            }
+            applySizeToAllSelects();
+          }
+
+          if (sizeGuideGrid) {
+            sizeGuideGrid.querySelectorAll('.size-card').forEach(btn => {
+              btn.addEventListener('click', () => selectVehicleSize(btn.dataset.size));
+            });
+          }
+
+          // Se exponen para que el script que arma cada selector de
+          // servicio (más abajo en la página) pueda aplicar la talla ya
+          // elegida apenas crea cada <select>.
+          window.__applySizeToSelect = applySizeToSelect;
+          window.__getSelectedVehicleSize = () => selectedVehicleSize;
+
+          // Exponer cierre globalmente como último respaldo (usado por onclick inline).
+          window.__closeServicesModal = closeServicesModal;
+        }
+      } catch (err) {
+        console.error('Error en script del modal de servicios:', err);
+      }
+    });
+  </script>
+<div aria-hidden="true" aria-labelledby="aboutModalTitle" aria-modal="true" class="services-modal" id="aboutModal" role="dialog">
+<div class="services-modal-backdrop" data-close-about=""></div>
+<div class="services-modal-panel">
+<div class="services-modal-header" id="aboutModalHeader">
+<div class="services-modal-header-text">
+<span class="eyebrow">Super Wash MTY</span>
+<h2 id="aboutModalTitle">El estándar detrás de Super Wash.</h2>
+</div>
+<button aria-label="Cerrar" class="services-modal-close" data-close-about="" type="button">×</button>
+</div>
+<div class="services-modal-content">
+<div class="about-modal-cover">
+
+<div class="about-modal-cover-text">
+<span class="eyebrow">Detailing automotriz &amp; servicio · Monterrey</span>
+<h3>Un espacio pensado para cuidar cada detalle.</h3>
+</div>
+</div>
+<div class="about-modal-body">
+<div class="about-modal-copy">
+<span class="eyebrow">Quiénes somos</span>
+<h2>Detailing de precisión, con estándar de taller y alma de servicio.</h2>
+<p>Super Wash MTY es una marca de alta rotación especializada en lavado y presentación automotriz para vehículos de gama media y alta. Nuestro objetivo es unir rapidez, orden operativo y un acabado que se perciba desde el primer vistazo.</p>
+<p>
+              Trabajamos con reserva previa, en un espacio propio equipado para tratar la pintura y los interiores con el cuidado que merecen. No hacemos lavados exprés: hacemos detailing de verdad, con procesos, productos y criterios de taller profesional.
+            </p>
+<p>Estamos en Av. Revolución #401, Jardines del Contry, Monterrey, Nuevo León. También coordinamos servicios a domicilio según zona y disponibilidad.</p>
+</div>
+<div class="about-modal-photo">
+
+<div class="about-modal-photo-caption">Trabajo manual, foco en el detalle: cada auto pasa por nuestro proceso completo.</div>
+</div>
+</div>
+<div class="about-modal-blocks">
+<div class="about-modal-block">
+<h4>Quiénes somos</h4>
+<p>Un equipo especializado en detailing automotriz, formado en corrección de pintura y protección, con estándar de taller premium.</p>
+</div>
+<div class="about-modal-block">
+<h4>Dónde estamos</h4>
+<p>Av. Revolución #401, Jardines del Contry, Monterrey, Nuevo León, México.</p>
+</div>
+<div class="about-modal-block">
+<h4>Nuestro objetivo</h4>
+<p>Que cada auto salga como el primer día, con un servicio transparente, con reserva y sin apuro — y un espacio donde esperar sea parte de la experiencia.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="servicesModalTitle" aria-modal="true" class="services-modal" id="servicesModal" role="dialog">
+<div class="services-modal-backdrop" data-close-services=""></div>
+<div class="services-modal-panel">
+<div class="services-modal-header" id="servicesModalHeader">
+<div class="services-modal-header-text">
+<span class="eyebrow">Catálogo completo</span>
+<h2 id="servicesModalTitle">Servicios Super Wash MTY.</h2>
+</div>
+<button aria-label="Cerrar catálogo" class="services-modal-close" data-close-services="" onclick="this.closest('.services-modal').classList.remove('open'); this.closest('.services-modal').setAttribute('aria-hidden','true'); document.body.classList.remove('menu-open');" type="button">×</button>
+</div>
+<div class="services-modal-content"><div class="container modal-catalog-container"><div class="catalog-nav"><a href="#sw-auto">Autos</a><a href="#sw-suv">SUV / Pickups</a><a href="#sw-special">Especiales</a><a href="#sw-home">A domicilio</a></div><section class="catalog-group" id="sw-auto"><div class="catalog-group-head"><h3>Autos</h3><span>Desde $200 MXN</span></div><div class="catalog-grid"><article class="catalog-card featured"><div class="catalog-card-top" style="--image:url('https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&amp;fit=crop&amp;w=1400&amp;q=88')"><div class="catalog-kicker">Servicio diario</div><h4>Exterior, completo o motor</h4><p>Elige el nivel de atención según el tiempo y resultado que buscas.</p></div><div class="catalog-body"><div class="catalog-meta"><span class="catalog-chip">Exterior $200</span><span class="catalog-chip">Completo $250</span><span class="catalog-chip">Motor $300</span></div><a class="btn btn-primary" href="https://wa.me/528116541872?text=Hola%2C%20quiero%20agendar%20un%20auto." target="_blank">Agendar auto</a></div></article></div></section><section class="catalog-group" id="sw-suv"><div class="catalog-group-head"><h3>SUV y pickups</h3><span>Según tamaño</span></div><div class="catalog-grid"><article class="catalog-card"><div class="catalog-card-top" style="--image:url('https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&amp;fit=crop&amp;w=1200&amp;q=88')"><h4>SUV chica y grande</h4><p>Lavado exterior, completo y motor.</p></div><div class="catalog-body"><div class="catalog-meta"><span class="catalog-chip">SUV chica desde $250</span><span class="catalog-chip">SUV grande desde $350</span></div></div></article><article class="catalog-card"><div class="catalog-card-top" style="--image:url('https://images.unsplash.com/photo-1551830820-330a71b99659?auto=format&amp;fit=crop&amp;w=1200&amp;q=88')"><h4>Pickups</h4><p>Atención para cabina sencilla, doble cabina y unidades de trabajo.</p></div><div class="catalog-body"><div class="catalog-meta"><span class="catalog-chip">2 puertas desde $350</span><span class="catalog-chip">4 puertas desde $400</span></div></div></article></div></section><section class="catalog-group" id="sw-special"><div class="catalog-group-head"><h3>Vehículos especiales</h3><span>Cotización</span></div><div class="catalog-grid"><article class="catalog-card featured"><div class="catalog-card-top" style="--image:url('https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&amp;fit=crop&amp;w=1400&amp;q=88')"><h4>RZR, Jeep modificados y chasis</h4><p>Servicios especiales, lavado de chasis, lubricación y engrasado.</p></div><div class="catalog-body"><a class="btn btn-primary" href="https://wa.me/528116541872?text=Hola%2C%20quiero%20cotizar%20un%20veh%C3%ADculo%20especial." target="_blank">Solicitar cotización</a></div></article></div></section><section class="catalog-group" id="sw-home"><div class="catalog-group-head"><h3>Servicio a domicilio</h3><span>Monterrey</span></div><div class="catalog-grid"><article class="catalog-card featured"><div class="catalog-card-top" style="--image:url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&amp;fit=crop&amp;w=1400&amp;q=88')"><h4>Super Wash llega hasta ti</h4><p>Consulta cobertura, horario y precio según ubicación y tipo de vehículo.</p></div><div class="catalog-body"><a class="btn btn-primary" href="https://wa.me/528116541872?text=Hola%2C%20quiero%20solicitar%20lavado%20a%20domicilio." target="_blank">Consultar cobertura</a></div></article></div></section></div></div>
+</div>
+</div>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const whatsappNumber = '528116541872';
+
+      document.querySelectorAll('#servicesModal .catalog-card').forEach((card, cardIndex) => {
+        const title = card.querySelector('.catalog-card-top h4')?.textContent.trim();
+        const table = card.querySelector('.price-table');
+        const actions = card.querySelector('.catalog-actions');
+        const currentLink = actions?.querySelector('a');
+
+        if (!title || !table || !actions || !currentLink) return;
+
+        const rows = [...table.querySelectorAll('tbody tr')].map((row, rowIndex) => {
+          const label = row.querySelector('th')?.textContent.trim() || `Opción ${rowIndex + 1}`;
+          const price = row.querySelector('td')?.textContent.trim() || 'A consultar';
+          return { label, price };
+        });
+
+        if (!rows.length) return;
+
+        const bookingBox = document.createElement('div');
+        bookingBox.className = 'service-booking-box';
+
+        const selectId = `service-option-${cardIndex}`;
+        const label = document.createElement('label');
+        label.className = 'service-booking-label';
+        label.htmlFor = selectId;
+        label.textContent = rows.length > 1 ? 'Selecciona tamaño, talla o servicio' : 'Opción seleccionada';
+
+        const select = document.createElement('select');
+        select.className = 'service-booking-select';
+        select.id = selectId;
+        select.setAttribute('aria-label', `Seleccionar opción para ${title}`);
+
+        rows.forEach((item, index) => {
+          const option = document.createElement('option');
+          option.value = index;
+          option.textContent = `${item.label} — ${item.price}`;
+          select.appendChild(option);
+        });
+
+        const selectedPrice = document.createElement('div');
+        selectedPrice.className = 'service-selected-price';
+
+        const newActions = document.createElement('div');
+        newActions.className = 'catalog-actions';
+
+        const bookingButton = document.createElement('button');
+        bookingButton.type = 'button';
+        bookingButton.className = 'btn btn-primary';
+        bookingButton.textContent = 'Agendar ahora';
+
+        function updateSelection() {
+          const selected = rows[Number(select.value)] || rows[0];
+          selectedPrice.textContent = `Valor seleccionado: ${selected.price}`;
+        }
+
+        bookingButton.addEventListener('click', () => {
+          const selected = rows[Number(select.value)] || rows[0];
+          const message =
+`Hola, quiero agendar el siguiente servicio:
+
+Servicio: ${title}
+Opción / tamaño: ${selected.label}
+Valor publicado: ${selected.price}
+
+Mi vehículo es:
+Marca y modelo:
+Año:
+Fecha preferida:
+
+¿Tienen disponibilidad?`;
+
+          const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+          window.open(url, '_blank', 'noopener,noreferrer');
+        });
+
+        select.addEventListener('change', updateSelection);
+        updateSelection();
+
+        // Si el cliente ya eligió una talla en la guía de arriba, se
+        // preselecciona automáticamente la opción correspondiente.
+        if (window.__applySizeToSelect) {
+          window.__applySizeToSelect(select);
+        }
+
+        newActions.appendChild(bookingButton);
+        bookingBox.append(label, select, selectedPrice, newActions);
+        actions.replaceWith(bookingBox);
+      });
+    });
+</script>
+<script>
+    (function(){
+      var videos = ['heroVideo', 'conceptVideo', 'cafeVideo']
+        .map(function(id){ return document.getElementById(id); })
+        .filter(Boolean);
+      if (!videos.length) return;
+
+      videos.forEach(function(v){
+        // Aseguramos los atributos clave por si el navegador los ignora en el markup.
+        v.muted = true;
+        v.defaultMuted = true;
+        v.playsInline = true;
+        v.setAttribute('muted', '');
+        v.setAttribute('playsinline', '');
+        v.setAttribute('webkit-playsinline', '');
+
+        var attempts = 0;
+        var maxAttempts = 8;
+
+        function tryPlay(){
+          if (!v.paused && !v.ended) return;
+          var p = v.play();
+          if (p && p.catch) {
+            p.catch(function(){
+              // Reintenta con backoff corto: algunos navegadores bloquean el primer intento
+              // hasta que el video termina de decodificar el primer frame.
+              if (attempts < maxAttempts) {
+                attempts++;
+                setTimeout(tryPlay, 250 * attempts);
+              }
+            });
+          }
+        }
+
+        // Disparadores de carga del propio video.
+        ['loadedmetadata', 'loadeddata', 'canplay', 'canplaythrough'].forEach(function(evt){
+          v.addEventListener(evt, tryPlay);
+        });
+
+        // Disparadores del ciclo de vida de la página.
+        tryPlay();
+        document.addEventListener('DOMContentLoaded', tryPlay);
+        window.addEventListener('load', tryPlay);
+        window.addEventListener('pageshow', tryPlay);
+
+        // Si el navegador pausa el video al cambiar de pestaña, lo retomamos al volver.
+        document.addEventListener('visibilitychange', function(){
+          if (!document.hidden) tryPlay();
+        });
+        v.addEventListener('pause', function(){
+          if (!document.hidden) tryPlay();
+        });
+
+        // El video queda visible: si algún navegador lo pausa por estar
+        // fuera de foco, lo reactivamos apenas vuelve a la vista.
+        if ('IntersectionObserver' in window) {
+          var io = new IntersectionObserver(function(entries){
+            entries.forEach(function(entry){
+              if (entry.isIntersecting) tryPlay();
+            });
+          }, { threshold: 0.1 });
+          io.observe(v);
+        }
+
+        // Última red de seguridad: el primer toque/click/scroll del usuario
+        // en cualquier parte de la página fuerza el arranque si seguía frenado.
+        var unlockEvents = ['touchstart', 'click', 'scroll', 'keydown'];
+        function unlock(){
+          tryPlay();
+          unlockEvents.forEach(function(evt){
+            document.removeEventListener(evt, unlock);
+          });
+        }
+        unlockEvents.forEach(function(evt){
+          document.addEventListener(evt, unlock, { passive: true });
+        });
+      });
+    })();
+  </script>
+<div class="ai-chat-tooltip" id="aiChatTooltip" role="status">
+<button aria-label="Cerrar aviso" class="ai-chat-tooltip-close" id="aiChatTooltipClose" type="button">×</button>
+<p>¿Necesitás una mano? Estoy para ayudarte 👋</p>
+</div>
+<button aria-label="Abrir chat con asistente virtual" class="ai-chat-fab" id="aiChatFab" type="button">
+<span class="ai-chat-fab-avatar">
+<span aria-hidden="true" class="ai-chat-fab-ring"></span>
+<img alt="Super Wash MTY" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186033/IMG_9343_rwg0ax_emlmnd.png" style="width:100%;height:100%;object-fit:cover;border-radius:inherit"/>
+</span>
+<span aria-hidden="true" class="ai-chat-fab-dot"></span>
+</button>
+<div aria-hidden="true" aria-label="Chat con asistente virtual de Super Wash MTY" class="ai-chat-window" id="aiChatWindow" role="dialog">
+<div class="ai-chat-header">
+<span class="sw-chat-avatar"><img alt="Super Wash MTY" loading="lazy" src="https://res.cloudinary.com/dgp7uhps3/image/upload/v1785186033/IMG_9343_rwg0ax_emlmnd.png" style="width:100%;height:100%;object-fit:cover;border-radius:50%"/></span>
+<div class="ai-chat-header-info">
+<strong>Super Wash MTY</strong>
+<span>En línea ahora</span>
+</div>
+<button aria-label="Cerrar chat" class="ai-chat-close" id="aiChatClose" type="button">×</button>
+</div>
+<div class="ai-chat-messages" id="aiChatMessages"></div>
+<form class="ai-chat-input-row" id="aiChatForm">
+<input aria-label="Escribir mensaje" autocomplete="off" id="aiChatInput" placeholder="Escribe tu mensaje..." type="text"/>
+<button aria-label="Enviar mensaje" id="aiChatSend" type="submit">➤</button>
+</form>
+</div>
+<script>
+  (function () {
+    const WHATSAPP_NUMBER = '528116541872';
+    const CHAT_ENDPOINT = '/api/chat';
+
+    const fab = document.getElementById('aiChatFab');
+    const win = document.getElementById('aiChatWindow');
+    const closeBtn = document.getElementById('aiChatClose');
+    const messagesEl = document.getElementById('aiChatMessages');
+    const form = document.getElementById('aiChatForm');
+    const input = document.getElementById('aiChatInput');
+    const sendBtn = document.getElementById('aiChatSend');
+
+    let history = [];      // [{role:'user'|'assistant', content:''}]
+    let collected = { nombre: '', vehiculo: '', servicio: '', fecha: '' };
+    let ready = false;
+    let opened = false;
+    let sending = false;
+
+    function scrollToBottom() {
+      messagesEl.scrollTop = messagesEl.scrollHeight;
+    }
+
+    function addMessage(role, text) {
+      const div = document.createElement('div');
+      div.className = 'ai-msg ' + (role === 'user' ? 'user' : 'bot');
+      div.textContent = text;
+      messagesEl.appendChild(div);
+      scrollToBottom();
+      return div;
+    }
+
+    function addTyping() {
+      const div = document.createElement('div');
+      div.className = 'ai-msg bot typing';
+      div.innerHTML = '<span></span><span></span><span></span>';
+      messagesEl.appendChild(div);
+      scrollToBottom();
+      return div;
+    }
+
+    function buildWhatsappMessage() {
+      const partes = [];
+      partes.push('Hola! Vengo del chat de la web y me gustaría agendar una hora.');
+      if (collected.nombre) partes.push(`Nombre: ${collected.nombre}`);
+      if (collected.vehiculo) partes.push(`Vehículo: ${collected.vehiculo}`);
+      if (collected.servicio) partes.push(`Servicio de interés: ${collected.servicio}`);
+      if (collected.fecha) partes.push(`Fecha / horario preferido: ${collected.fecha}`);
+      return partes.join('\n');
+    }
+
+    function showWhatsappCta() {
+      const box = document.createElement('div');
+      box.className = 'ai-chat-wa-cta';
+      const msg = buildWhatsappMessage();
+      const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+      box.innerHTML = `
+        <p>Ya tengo todo lo que necesitaba. Toca el botón para confirmar tu cita por WhatsApp 👇</p>
+        <a href="${url}" target="_blank" rel="noopener">Continuar por WhatsApp</a>
+      `;
+      messagesEl.appendChild(box);
+      scrollToBottom();
+      input.disabled = true;
+      sendBtn.disabled = true;
+      input.placeholder = 'Continuá la conversación por WhatsApp';
+    }
+
+    async function sendToAI() {
+      const typingEl = addTyping();
+      try {
+        const res = await fetch(CHAT_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ messages: history, collected })
+        });
+
+        if (!res.ok) throw new Error('bad response');
+        const data = await res.json();
+
+        typingEl.remove();
+
+        const reply = (data && data.reply) || 'Disculpa, ¿me repites eso?';
+        addMessage('assistant', reply);
+        history.push({ role: 'assistant', content: reply });
+
+        if (data && data.collected) {
+          collected = { ...collected, ...data.collected };
+        }
+
+        if (data && data.ready && !ready) {
+          ready = true;
+          setTimeout(showWhatsappCta, 350);
+        }
+      } catch (err) {
+        typingEl.remove();
+        addMessage('assistant', 'Uy, se me cortó la conexión. ¿Puedes escribirme de nuevo?');
+      } finally {
+        sending = false;
+        sendBtn.disabled = false;
+      }
+    }
+
+    function openChat() {
+      win.classList.add('open');
+      win.setAttribute('aria-hidden', 'false');
+      fab.classList.add('hidden-fab');
+      hideTooltip(true);
+      if (!opened) {
+        opened = true;
+        const greeting = '¡Hola! 👋 Soy el asistente de Super Wash MTY. Te ayudo a agendar tu lavado en un toque, ¿cómo te llamas?';
+        addMessage('assistant', greeting);
+        history.push({ role: 'assistant', content: greeting });
+      }
+      input.focus();
+    }
+
+    function closeChat() {
+      win.classList.remove('open');
+      win.setAttribute('aria-hidden', 'true');
+      fab.classList.remove('hidden-fab');
+    }
+
+    // --- Globo de ayuda: aparece a los 45s si el chat sigue cerrado ---
+    const tooltip = document.getElementById('aiChatTooltip');
+    const tooltipClose = document.getElementById('aiChatTooltipClose');
+    let tooltipDismissed = false;
+
+    function hideTooltip(dismissed) {
+      if (dismissed) tooltipDismissed = true;
+      if (tooltip) tooltip.classList.remove('show');
+    }
+
+    if (tooltip) {
+      setTimeout(function () {
+        if (!opened && !tooltipDismissed && !win.classList.contains('open')) {
+          tooltip.classList.add('show');
+        }
+      }, 45000);
+
+      tooltip.addEventListener('click', function (e) {
+        if (e.target.closest('#aiChatTooltipClose')) return;
+        hideTooltip(true);
+        openChat();
+      });
+
+      if (tooltipClose) {
+        tooltipClose.addEventListener('click', function (e) {
+          e.stopPropagation();
+          hideTooltip(true);
+        });
+      }
+    }
+
+    fab.addEventListener('click', openChat);
+    closeBtn.addEventListener('click', closeChat);
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const text = input.value.trim();
+      if (!text || sending || ready) return;
+
+      addMessage('user', text);
+      history.push({ role: 'user', content: text });
+      input.value = '';
+      sending = true;
+      sendBtn.disabled = true;
+      sendToAI();
+    });
+  })();
+  </script>
+<script>
+  (function () {
+    const cards = Array.from(document.querySelectorAll('#galleryGrid .gallery-card'));
+    if (!cards.length) return;
+
+    const lightbox = document.getElementById('galleryLightbox');
+    const lightboxImg = document.getElementById('galleryLightboxImg');
+    const closeBtn = document.getElementById('galleryLightboxClose');
+    const prevBtn = document.getElementById('galleryLightboxPrev');
+    const nextBtn = document.getElementById('galleryLightboxNext');
+
+    const images = cards.map(card => ({
+      src: card.querySelector('img').src,
+      alt: card.querySelector('img').alt
+    }));
+
+    let current = 0;
+
+    function openLightbox(index) {
+      current = index;
+      updateImage();
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('menu-open');
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('menu-open');
+    }
+
+    function updateImage() {
+      const item = images[current];
+      lightboxImg.src = item.src;
+      lightboxImg.alt = item.alt;
+    }
+
+    function showNext() {
+      current = (current + 1) % images.length;
+      updateImage();
+    }
+
+    function showPrev() {
+      current = (current - 1 + images.length) % images.length;
+      updateImage();
+    }
+
+    cards.forEach((card, index) => {
+      card.addEventListener('click', () => openLightbox(index));
+    });
+
+    closeBtn.addEventListener('click', closeLightbox);
+    nextBtn.addEventListener('click', showNext);
+    prevBtn.addEventListener('click', showPrev);
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') showNext();
+      if (e.key === 'ArrowLeft') showPrev();
+    });
+  })();
+  </script>
+</body>
+</html>
